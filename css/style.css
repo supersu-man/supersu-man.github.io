@@ -1,0 +1,51 @@
+
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.page1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 10, 10);
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    transition: all 0.3s;
+    width: 20rem;
+    height: 30rem;
+    background-image: url("../img/card_background.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.7rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+    width: 22rem;
+    height: 32rem;
+}
+
+.socials{
+    position: absolute;
+    bottom: 1rem;
+}
+
+.icon{
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+    transition: all 0.3s;
+    color: aqua;
+}
+
+.icon:hover{
+    height: 4rem;
+    width: 4rem;
+}
+
+*{
+    font-family: 'Open Sans';
+}
