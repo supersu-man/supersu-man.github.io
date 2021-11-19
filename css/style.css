@@ -24,8 +24,7 @@
 }
 
 .card:hover{
-    width: 22rem;
-    height: 32rem;
+    transform: scale(1.03)
 }
 
 .socials{
@@ -42,8 +41,7 @@
 }
 
 .icon:hover{
-    height: 4rem;
-    width: 4rem;
+    transform: scale(1.2)
 }
 
 *{

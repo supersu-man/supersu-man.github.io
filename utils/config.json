@@ -1,0 +1,9 @@
+{
+    "links" : {
+        "facebook" : ["https://www.facebook.com/AskSumanth444", "./img/facebook.png"],
+        "instagram" : ["https://www.instagram.com/supersu_man/","./img/instagram.png"],
+        "twitter" : ["https://twitter.com/supersu_man?lang=en","./img/twitter.png"],
+        "youtube" : ["https://www.youtube.com/channel/UCceOeB8FcmdUqmW79pUCYPg","./img/youtube.png"],
+        "github" : ["https://github.com/supersu-man","./img/github.png"]
+    }
+}
