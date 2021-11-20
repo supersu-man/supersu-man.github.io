@@ -1,10 +1,26 @@
+configData = null
+getConfigData((data) => {
+    configData = data
+})
 $(()=>{
     addSocials()
+    addCardImage()
     cardMove()
+    addText()
 })
 
+function addSocials(){
+    for (const key in configData.links) {
+        $('.socials').append(`<a href="${configData.links[key][0]}"><img class="icon" src="${configData.links[key][1]}"></a>`);
+    }
+}
+
+function addCardImage(){
+    $(".card").css("background-image",`url("${configData.card_image}")`)
+}
+
 function cardMove(){
-    $("body").mousemove(function (event) {
+    $("body").mousemove((event) => {
         var objLeft = $("body").offset().left;
         var objTop = $("body").offset().top;
 
@@ -17,12 +33,8 @@ function cardMove(){
     })
 }
 
-function addSocials(){
-    getConfigData((data)=>{
-        for (const key in data.links) {
-            $('.socials').append(`<a href="${data.links[key][0]}"><img class="icon" src="${data.links[key][1]}"></a>`);
-        }
-    })
+function addText(){
+    $(".text").html(configData.text)
 }
 
 function getConfigData(callback){

@@ -5,8 +5,7 @@
     align-items:center;
 }
 
-.page1{
-    background-color: rgb(255, 255, 255);
+.container{
     color: rgb(10, 10, 10);
     height: 100%;
     width: 100%;
@@ -16,7 +15,6 @@
     transition: all 0.1s;
     width: 20rem;
     height: 30rem;
-    background-image: url("../img/card_background.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 0.7rem;
@@ -24,8 +22,17 @@
     box-shadow: 0 7px 10px -2px gray;
 }
 
-.card:hover{
-    transform: scale(1.03)
+
+.text{
+    width: 24rem;
+    position: absolute;
+    left: 2rem;
+    top:-2rem;
+    font-size:3rem;
+    background: linear-gradient(to bottom right, #f32170, #cdbb95,#ff6b08, #eedd44);
+    background-clip:content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .socials{

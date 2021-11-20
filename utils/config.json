@@ -1,4 +1,6 @@
 {
+    "card_image" : "../img/card_background.jpg",
+    "text" : "hey, this is sumanth and i am a developer. <br> thanks for visiting",
     "links" : {
         "facebook" : ["https://www.facebook.com/AskSumanth444", "./img/facebook.png"],
         "instagram" : ["https://www.instagram.com/supersu_man/","./img/instagram.png"],
