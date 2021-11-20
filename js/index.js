@@ -1,6 +1,21 @@
 $(()=>{
     addSocials()
+    cardMove()
 })
+
+function cardMove(){
+    $("body").mousemove(function (event) {
+        var objLeft = $("body").offset().left;
+        var objTop = $("body").offset().top;
+
+        var objCenterX = objLeft + $("body").width() / 2;
+        var objCenterY = objTop + $("body").height() / 2;
+        var x = event.pageX - objCenterX
+        var y = event.pageY - objCenterY
+
+        $(".card").css("transform",`perspective(500px) rotateX(${-y/100}deg) rotateY(${x/100}deg)`)
+    })
+}
 
 function addSocials(){
     getConfigData((data)=>{
