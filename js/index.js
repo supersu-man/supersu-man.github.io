@@ -1,12 +1,12 @@
 configData = null
-getConfigData((data) => {
-    configData = data
-})
 $(()=>{
-    addSocials()
-    addCardImage()
-    cardMove()
-    addText()
+    getConfigData((data) => {
+        configData = data
+        addSocials()
+        addCardImage()
+        cardMove()
+        addText()
+    })
 })
 
 function addSocials(){

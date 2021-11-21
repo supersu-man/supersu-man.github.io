@@ -1,0 +1,44 @@
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+}
+
+.container{
+    color: rgb(10, 10, 10);
+    padding: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    grid-gap: 1rem;
+}
+
+.card{
+    transition: all 0.3s;
+    margin: auto;
+    width: 18rem;
+    height: 10rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 14px -4px gray;
+    background: linear-gradient(to right, #f32170, #cdbb95,#ff6b08, #eedd44);
+    background-clip:content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 2.5rem;
+}
+
+*{
+    font-family: 'Open Sans';
+}

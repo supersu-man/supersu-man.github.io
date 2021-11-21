@@ -6,6 +6,13 @@
         "instagram" : ["https://www.instagram.com/supersu_man/","./img/instagram.png"],
         "twitter" : ["https://twitter.com/supersu_man?lang=en","./img/twitter.png"],
         "youtube" : ["https://www.youtube.com/channel/UCceOeB8FcmdUqmW79pUCYPg","./img/youtube.png"],
-        "github" : ["https://github.com/supersu-man","./img/github.png"]
-    }
+        "github" : ["https://github.com/supersu-man","./img/github.png"],
+        "playstore" : ["./html/apps.html","./img/playstore.png"]
+    },
+    "apps" : [
+        ["WhySave","#7cc576","https://github.com/supersu-man/WhySave/releases/latest"],
+        ["Gitamite","#ba5b5b","https://play.google.com/store/apps/details?id=com.supersuman.gitamite"],
+        ["Macronium","#8781bd","https://play.google.com/store/apps/details?id=com.supersuman.macronium"],
+        ["Spotify Playlist Downloader","#f9ad81","https://github.com/supersu-man/SpotifyPlaylistDownloader/releases/latest"]
+    ]
 }
