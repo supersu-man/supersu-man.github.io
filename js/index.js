@@ -29,7 +29,7 @@ function cardMove(){
         var x = event.pageX - objCenterX
         var y = event.pageY - objCenterY
 
-        $(".card").css("transform",`perspective(500px) rotateX(${-y/100}deg) rotateY(${x/100}deg)`)
+        $(".card").css("transform",`perspective(500px) rotateX(${-y/70}deg) rotateY(${x/70}deg)`)
     })
 }
 
