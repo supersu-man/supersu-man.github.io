@@ -8,7 +8,7 @@
         "youtube" : ["https://www.youtube.com/channel/UCceOeB8FcmdUqmW79pUCYPg","./img/youtube.png"],
         "github" : ["https://github.com/supersu-man","./img/github.png"],
         "playstore" : ["https://play.google.com/store/apps/dev?id=8255017758196835684","./img/playstore.png"],
-        "dev" : ["https://dev.to/supersumanlocal","./img/dev.png"]
+        "dev" : ["https://dev.to/supersuman","./img/dev.png"]
     },
     "apps" : [
         ["WhySave","#7cc576","https://github.com/supersu-man/WhySave/releases/latest"],
