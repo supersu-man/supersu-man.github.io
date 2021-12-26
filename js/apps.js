@@ -1,5 +1,5 @@
 var slideIndex = 1;
-var imagesPaths = []
+var imagesData = null
 $(()=>{
 
   $(".prev").on("click", ()=>{
@@ -27,8 +27,7 @@ function showSlides(n) {
       slides[i].style.display = "none"
   }
   slides[slideIndex-1].style.display = "block"
-  var title = imagesPaths[slideIndex-1].split("featured/")[1].split(".")[0]
-  title = title.split("%20").join(" ");
+  var title = imagesData[slideIndex-1][0]
   $("#title").text(title)
 }
 
@@ -37,26 +36,21 @@ function plusSlides(n) {
 }
 
 function addFeaturedImages(){
-  imagesPaths.forEach(element => {
-    $('.container').append(`<div class="mySlides"><img src="..${element}" ></div>`);
+  imagesData.forEach(element => {
+    $('.container').append(`<div class="mySlides"><img src="${element[1]}" ></div>`);
   });
 }
 
 function getFeaturedImages(callback){
-  $.get("../gallery/featured", (data) => {
-    $(data).find("#files > li").each(function(){
-      var image = $(this).find("a").attr("href")
-      if(image.toString().includes("featured")){
-        imagesPaths.push(image)
-      }
-   })
-   console.log(imagesPaths)
-   callback()
+  $.getJSON("../utils/config.json", (data) => {
+    imagesData = data.cycling
+    callback(data)
   })
 }
+
 function shuffleArray() {
-  for (let i = imagesPaths.length - 1; i > 0; i--) {
+  for (let i = imagesData.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [imagesPaths[i], imagesPaths[j]] = [imagesPaths[j], imagesPaths[i]];
+      [imagesData[i], imagesData[j]] = [imagesData[j], imagesData[i]];
   }
 }

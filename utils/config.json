@@ -11,10 +11,10 @@
         "dev" : ["https://dev.to/supersuman","./img/dev.png"],
         "cycling" : ["../html/apps.html","./img/bicycle.png"]
     },
-    "apps" : [
-        ["WhySave","#7cc576","https://github.com/supersu-man/WhySave/releases/latest"],
-        ["Gitamite","#ba5b5b","https://play.google.com/store/apps/details?id=com.supersuman.gitamite"],
-        ["Macronium","#8781bd","https://play.google.com/store/apps/details?id=com.supersuman.macronium"],
-        ["Spotify Playlist Downloader","#f9ad81","https://github.com/supersu-man/SpotifyPlaylistDownloader/releases/latest"]
+    "cycling" : [
+        ["Hyderabad to Ananthapur - 363KM","../gallery/featured/ananthapur.jpg"],
+        ["Hyderabad to Delhi - 1578KM","../gallery/featured/delhi.jpg"],
+        ["Hyderabad to Delhi - 1578KM","../gallery/featured/delhii.jpg"],
+        ["Hyderabad to Vasco da Gama - 744KM","../gallery/featured/vasco.jpg"]
     ]
 }
