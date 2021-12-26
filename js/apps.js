@@ -43,20 +43,17 @@ function addFeaturedImages(){
 }
 
 function getFeaturedImages(callback){
-  $.ajax({
-    url: "../gallery/featured",
-    success: (data)=>{
-      $(data).find("#files > li").each(function(){
-        var image = $(this).find("a").attr("href")
-        if(image.toString().includes("featured")){
-          imagesPaths.push(image)
-        }
-     })
-     callback()
-    }
+  $.get("../gallery/featured", (data) => {
+    $(data).find("#files > li").each(function(){
+      var image = $(this).find("a").attr("href")
+      if(image.toString().includes("featured")){
+        imagesPaths.push(image)
+      }
+   })
+   console.log(imagesPaths)
+   callback()
   })
 }
-
 function shuffleArray() {
   for (let i = imagesPaths.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
