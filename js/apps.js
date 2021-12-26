@@ -1,25 +1,65 @@
-var configData = null;
+var slideIndex = 1;
+var imagesPaths = []
 $(()=>{
-    getConfigData((data)=>{
-        configData = data;
-        addCards()
-    })
+
+  $(".prev").on("click", ()=>{
+    plusSlides(-1)
+  })
+
+  $(".next").on("click", ()=>{
+    plusSlides(+1)
+  })
+
+  getFeaturedImages(()=>{
+    shuffleArray()
+    addFeaturedImages()
+    showSlides(slideIndex);
+  })
+
 })
 
-
-function addCards(){
-    var v1 = `onmouseout="this.style='background: linear-gradient(to right, #f32170, #cdbb95,#ff6b08, #eedd44); background-clip:content-box; -webkit-background-clip: text; -webkit-text-fill-color: transparent;';"`
-    for (const key in configData.apps) {
-        var v2 = `onmouseover="this.style='background: ${configData.apps[key][1]}; background-clip:content-box; -webkit-background-clip: text; -webkit-text-fill-color: transparent;';"`
-        $('.container').append(`<a class ="card center"  ${v1} ${v2} href="${configData.apps[key][2]}"><p>${configData.apps[key][0]}</p></a>`);
-    }
+function showSlides(n) {
+  var i
+  var slides = document.getElementsByClassName("mySlides")
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"
+  }
+  slides[slideIndex-1].style.display = "block"
+  var title = imagesPaths[slideIndex-1].split("featured/")[1].split(".")[0]
+  title = title.split("%20").join(" ");
+  $("#title").text(title)
 }
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-function getConfigData(callback){
-    $.getJSON("../utils/config.json", (data) => {
-        callback(data)
-    }).fail(() => {
-        console.log("An error has occurred");
-    });
+function addFeaturedImages(){
+  imagesPaths.forEach(element => {
+    $('.container').append(`<div class="mySlides"><img src="..${element}" ></div>`);
+  });
+}
+
+function getFeaturedImages(callback){
+  $.ajax({
+    url: "../gallery/featured",
+    success: (data)=>{
+      $(data).find("#files > li").each(function(){
+        var image = $(this).find("a").attr("href")
+        if(image.toString().includes("featured")){
+          imagesPaths.push(image)
+        }
+     })
+     callback()
+    }
+  })
+}
+
+function shuffleArray() {
+  for (let i = imagesPaths.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [imagesPaths[i], imagesPaths[j]] = [imagesPaths[j], imagesPaths[i]];
+  }
 }
