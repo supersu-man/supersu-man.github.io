@@ -8,7 +8,7 @@ function getConfigData(callback) {
 
 function makeCard(title, caption, lang, link, size){
     return `
-    <div class="col-lg-${2*parseInt(size)} col-xl-${size}">
+    <div class="col-sm-${2*parseInt(size)} col-xl-${size}">
         <div class="proj-card d-flex align-items-center p-4">
             <a href="${link}">
                 <div class="p-2 fw-bolder h6 s-color">${lang}</div>

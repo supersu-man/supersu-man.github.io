@@ -9,6 +9,38 @@
             "star" : true
         },
         {
+            "title" : "Andha",
+            "caption" : "App for big texts and colors",
+            "lang" : "KOTLIN",
+            "link" : "https://github.com/supersu-man/andha",
+            "size" : "3",
+            "star" : false
+        },
+        {
+            "title" : "WhySave",
+            "caption" : "Start whatsapp convo with unsaved contact",
+            "lang" : "Kotlin",
+            "link" : "https://play.google.com/store/apps/details?id=com.supersuman.whysave",
+            "size" : "3",
+            "star" : false
+        },
+        {
+            "title" : "Ksetrin",
+            "caption" : "App for Farmers",
+            "lang" : "KOTLIN",
+            "link" : "https://github.com/Ksetrin-Org/ksetrin-android",
+            "size" : "3",
+            "star" : true
+        },
+        {
+            "title" : "Nerd Clocks",
+            "caption" : "Clock widgets for android",
+            "lang" : "KOTLIN",
+            "link" : "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
+            "size" : "3",
+            "star" : false
+        },
+        {
             "title" : "Macronium",
             "caption" : "Control PC using phone",
             "lang" : "KOTLIN",
@@ -25,22 +57,55 @@
             "star" : false
         },
         {
-            "title" : "WhySave",
-            "caption" : "open Whatsapp unsaved contact",
-            "lang" : "Kotlin",
-            "link" : "https://play.google.com/store/apps/details?id=com.supersuman.whysave",
+            "title" : "Sangeet Bot",
+            "caption" : "Discord music bot",
+            "lang" : "PYTHON",
+            "link" : "https://github.com/supersu-man/sangeet-discordbot",
+            "size" : "3",
+            "star" : true
+        },
+        
+        {
+            "title" : "Sudoku Solver",
+            "caption" : "Solve sudoku",
+            "lang" : "JAVASCRIPT",
+            "link" : "https://supersu-man.github.io/sudoku-solver/",
+            "size" : "3",
+            "star" : false
+        },
+        
+        {
+            "title" : "Vainko Bot",
+            "caption" : "Discord voice channel bot",
+            "lang" : "PYTHON",
+            "link" : "https://github.com/supersu-man/vainko-discordbot",
             "size" : "3",
             "star" : false
         },
         {
-            "title" : "Nerd Clocks",
-            "caption" : "Clock widgets for android",
-            "lang" : "Kotlin",
-            "link" : "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
+            "title" : "Weather App",
+            "caption" : "Weather App for AlcoveX",
+            "lang" : "KOTLIN",
+            "link" : "https://github.com/supersu-man/the-weather-app",
+            "size" : "3",
+            "star" : false
+        },
+        {
+            "title" : "Gitamite Library",
+            "caption" : "Library to access glearn and moodle",
+            "lang" : "PYTHON",
+            "link" : "https://github.com/innovation-center-gitam-hyd/gitamite-library",
+            "size" : "3",
+            "star" : true
+        },
+        {
+            "title" : "Virtual Assistant",
+            "caption" : "Personal voice assistant",
+            "lang" : "PYTHON",
+            "link" : "https://github.com/supersu-man/maya--virtual-assistant",
             "size" : "3",
             "star" : true
         }
-
     ],
     "links" : {
         "facebook" : ["https://www.facebook.com/AskSumanth444", "./img/facebook.png"],
