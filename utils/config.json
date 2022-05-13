@@ -1,6 +1,47 @@
 {
-    "card_image" : "../img/card_background.jpg",
-    "text" : "hey, this is sumanth and i am a developer. <br> thanks for visiting",
+    "projects" : [
+        {
+            "title" : "Gitamite",
+            "caption" : "App for GITAM University",
+            "lang" : "KOTLIN",
+            "link" : "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
+            "size" : "6",
+            "star" : true
+        },
+        {
+            "title" : "Macronium",
+            "caption" : "Control PC using phone",
+            "lang" : "KOTLIN",
+            "link" : "https://play.google.com/store/apps/details?id=com.supersuman.macronium",
+            "size" : "6",
+            "star" : true
+        },
+        {
+            "title" : "Macronium Server",
+            "caption" : "Server for Macronium",
+            "lang" : "JAVASCRIPT",
+            "link" : "https://supersu-man.github.io/macronium-server/",
+            "size" : "3",
+            "star" : false
+        },
+        {
+            "title" : "WhySave",
+            "caption" : "open Whatsapp unsaved contact",
+            "lang" : "Kotlin",
+            "link" : "https://play.google.com/store/apps/details?id=com.supersuman.whysave",
+            "size" : "3",
+            "star" : false
+        },
+        {
+            "title" : "Nerd Clocks",
+            "caption" : "Clock widgets for android",
+            "lang" : "Kotlin",
+            "link" : "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
+            "size" : "3",
+            "star" : true
+        }
+
+    ],
     "links" : {
         "facebook" : ["https://www.facebook.com/AskSumanth444", "./img/facebook.png"],
         "instagram" : ["https://www.instagram.com/supersu_man/","./img/instagram.png"],
