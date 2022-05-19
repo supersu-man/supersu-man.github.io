@@ -20,13 +20,10 @@ function makeCard(title, caption, lang, link){
 
 function getGridItems(configData) {
     var gridItems = []
-    for (const key in configData.projects) {
-        var project = configData.projects[key]
-        console.log(project["title"])
-        if(project["star"]){
-            var card = makeCard(project["title"], project["caption"], project["lang"], project["link"])
-            gridItems.push(card)
-        }
+    for (const key in configData["star-projects"]) {
+        var project = configData["star-projects"][key]
+        var card = makeCard(project["title"], project["caption"], project["lang"], project["link"])
+        gridItems.push(card)
     }
     return gridItems
 }
