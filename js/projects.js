@@ -22,8 +22,8 @@ function makeCard(title, caption, lang, link, size){
 
 function getGridItems(configData) {
     var gridItems = []
-    for (const key in configData.projects) {
-        var project = configData.projects[key]
+    for (const key in configData["projects"]) {
+        var project = configData["projects"][key]
         var card = makeCard(project["title"], project["caption"], project["lang"], project["link"], project["size"])
         gridItems.push(card)
     }
