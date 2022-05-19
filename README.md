@@ -1,5 +1,5 @@
 # port-folio
- built from scratch, you can check it out how it looks [here](https://supersu-man.github.io/), heavily inspired from [Supah](http://www.supah.it/)
+ built from scratch, you can check it out [here](https://supersu-man.github.io/).
  
 # want one?
  - clone the project to your local machine
