@@ -6,9 +6,9 @@ function getConfigData(callback) {
     });
 }
 
-function makeCard(title, caption, lang, link, size){
+function makeCard(title, caption, lang, link, size) {
     return `
-    <div class="col-sm-${2*parseInt(size)} col-xl-${size}">
+    <div class="col-sm-${2 * parseInt(size)} col-xl-${size}">
         <div class="proj-card d-flex align-items-center p-4">
             <a href="${link}">
                 <div class="p-2 fw-bolder h6 s-color">${lang}</div>
@@ -30,7 +30,7 @@ function getGridItems(configData) {
     return gridItems
 }
 
-function addCards(gridItems, grid){
+function addCards(gridItems, grid) {
     for (const key in gridItems) {
         grid.append(gridItems[key])
     }
