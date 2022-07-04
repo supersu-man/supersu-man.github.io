@@ -1,0 +1,44 @@
+* {
+	font-family: 'Roboto';
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+a,
+a:focus,
+a:hover {
+	text-decoration: inherit;
+	color: inherit;
+}
+
+.center-vh {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.shadow1 {
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow2 {
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.br-12px {
+	border-radius: 12px;
+}
+
+.font-14px {
+	font-size: 14px;
+}
+
+.font-16px {
+	font-size: 16px;
+}

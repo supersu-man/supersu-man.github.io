@@ -1,0 +1,56 @@
+.light-theme {
+	--primary: #006C4D;
+	--on-surface-variant: #404944;
+	--on-primary: #FFFFFF;
+	--on-surface: #191C1A;
+	--secondary: #4C6358;
+	--surface: #FBFDF9;
+	--surface1: linear-gradient(0deg, rgba(0, 108, 77, 0.05), rgba(0, 108, 77, 0.05)), var(--surface);
+}
+
+.dark-theme {
+	--primary: #33E0A7;
+	--on-surface-variant: #BFC9C2;
+	--on-primary: #003827;
+	--on-surface: #E1E3DF;
+	--secondary: #B3CCBE;
+	--surface: #191C1A;
+	--surface1: linear-gradient(0deg, rgba(51, 224, 167, 0.05), rgba(51, 224, 167, 0.05)), var(--surface);
+}
+
+body {
+	background-color: var(--surface);
+}
+
+html,
+body {
+	margin: 0px;
+}
+
+.text-primary {
+	color: var(--primary) !important;
+}
+
+.text-secondary {
+	color: var(--secondary) !important;
+}
+
+.text-on-surface {
+	color: var(--on-surface);
+}
+
+.text-on-surface-variant {
+	color: var(--on-surface-variant);
+}
+
+.text-on-primary {
+	color: var(--on-primary);
+}
+
+.bg-primary {
+	background-color: var(--primary) !important;
+}
+
+.bg-surface1 {
+	background: var(--surface1)
+}
