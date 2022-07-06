@@ -1,45 +1,42 @@
-function getConfigData(callback) {
-    $.getJSON("../utils/config.json", (data) => {
-        callback(data)
-    }).fail(() => {
-        console.log("An error has occurred");
-    });
-}
-
 function makeCard(title, caption, lang, link, size) {
     return `
-    <div class="col-sm-${2 * parseInt(size)} col-xl-${size}">
-        <div class="proj-card d-flex align-items-center p-4">
-            <a href="${link}">
-                <div class="p-2 fw-bolder h6 s-color">${lang}</div>
-                <div class="p-2 h2">${title}</div>
-                <div class="p-2 t-color">${caption}</div>
-            </a>
-        </div>
+    <div class="col-sm-${2 * size} col-xl-${size}">
+        <a href="${link}">
+            <div class="material-card p-4 my-2" style="height: 150px";>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="h2">${title}</div>
+                    <div class="text-on-surface-variant">${lang}</div>
+                </div>
+                <div class="text-on-surface-variant">${caption}</div>
+            </div>
+        </a>
     </div>
     `
 }
 
-function getGridItems(configData) {
-    var gridItems = []
-    for (const key in configData["projects"]) {
-        var project = configData["projects"][key]
-        var card = makeCard(project["title"], project["caption"], project["lang"], project["link"], project["size"])
-        gridItems.push(card)
+function loadJSON(path, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200 && success) {
+            success(JSON.parse(xhr.responseText))
+        } else if (error) {
+            error(xhr)
+        }
     }
-    return gridItems
+    xhr.open("GET", path, true);
+    xhr.send()
 }
 
-function addCards(gridItems, grid) {
-    for (const key in gridItems) {
-        grid.append(gridItems[key])
-    }
+var body = document.getElementById('body')
+if (localStorage.getItem('dark-theme')) {
+    body.classList.remove('light-theme')
+    body.classList.add('dark-theme')
 }
 
-
-$(() => {
-    getConfigData((data) => {
-        var gridItems = getGridItems(data);
-        addCards(gridItems, $('#grid'))
+const grid = document.getElementById('grid')
+loadJSON("../utils/config.json", (data)=>{
+    data.projects.forEach(element => {
+        const card = makeCard(element.title, element.caption, element.lang, element.link, element.size)
+        grid.insertAdjacentHTML('beforeend', card)
     })
 })
