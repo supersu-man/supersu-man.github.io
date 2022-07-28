@@ -1,5 +1,6 @@
-* {
-	font-family: 'Roboto';
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/Roboto.ttf);
 }
 
 html,
@@ -8,6 +9,7 @@ body {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
+	font-family: Roboto;
 }
 
 a,
