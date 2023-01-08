@@ -1,33 +1,73 @@
 @font-face {
-    font-family: Roboto;
-    src: url(../assets/fonts/Roboto.ttf);
+	font-family: Rubik;
+	src: url(../assets/fonts/Rubik.ttf);
 }
 
 html,
 body {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: Roboto;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000000;
+	font-family: Rubik;
 }
 
-a,
-a:focus,
-a:hover {
-	text-decoration: inherit;
-	color: inherit;
+.real-card {
+	border-radius: 60px;
+	transition: 400ms;
+	cursor: pointer;
 }
 
-.center-vh {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.real-card:hover {
+	scale: 0.97;
 }
 
-.font-14px {
-	font-size: 14px;
+.marquee,
+.marquee-faster {
+	transition: 400ms ease-in-out;
+	opacity: 0;
 }
 
-.font-16px {
-	font-size: 16px;
+.title {
+	transition: 200ms ease-in-out;
+	opacity: 1;
+}
+
+.real-card:hover .marquee,
+.real-card:hover .marquee-faster {
+	opacity: 1;
+}
+
+.real-card:hover .title {
+	opacity: 0;
+}
+
+.rotate {
+	transition: 800ms ease-in-out;
+	animation: rotate 4.7s linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+.img {
+	transition: 400ms;
+}
+
+#highlight .marquee {
+	opacity: 1 ;
+}
+
+.highlight-hover .img {
+	bottom: 50% !important;
+	right: 50% !important;
+	transform: translate(30%, 30%);
+	scale: 1.9;
+}
+
+.highlight-hover .marquee {
+	opacity: 0 !important;
 }
