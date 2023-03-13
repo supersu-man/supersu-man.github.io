@@ -25,6 +25,10 @@ $('#contact').click(() => {
     window.open("https://mail.google.com/mail/?view=cm&source=mailto&to=sumanthpera444@gmail.com")
 })
 
+$('#resume').click(() => {
+    window.open("../assets/resume.pdf")
+})
+
 $('.real-card').hover(
     () => {
         $('#highlight').addClass('highlight-hover')

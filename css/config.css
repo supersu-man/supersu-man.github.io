@@ -10,6 +10,7 @@ body {
 	margin: 0px;
 	background-color: #000000;
 	font-family: Rubik;
+	scroll-behavior: auto;
 }
 
 .real-card {
@@ -58,7 +59,7 @@ body {
 }
 
 #highlight .marquee {
-	opacity: 1 ;
+	opacity: 1;
 }
 
 .highlight-hover .img {
