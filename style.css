@@ -1,0 +1,26 @@
+@font-face {
+	font-family: Rubik;
+	src: url(assets/Rubik.ttf);
+}
+
+html,
+body {
+	background-color: #000000;
+	font-family: Rubik;
+	margin: 0px;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.card {
+	border-radius: 40px;
+	padding: 20px;
+	transition: 330ms;
+}
+
+.card:hover {
+	scale: 0.96;
+}
