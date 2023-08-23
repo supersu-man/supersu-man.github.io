@@ -24,3 +24,15 @@ a {
 .card:hover {
 	scale: 0.96;
 }
+
+.card:hover {
+	scale: 0.96;
+}
+
+super-marquee {
+	transition: 330ms;
+}
+
+.card:hover super-marquee {
+	opacity: 1 !important;
+}
