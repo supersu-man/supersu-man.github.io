@@ -13,26 +13,14 @@ body {
 
 a {
 	text-decoration: none;
+	color: inherit;
+	border-radius: 50px;
 }
 
-.card {
-	border-radius: 40px;
-	padding: 20px;
-	transition: 330ms;
-}
-
-.card:hover {
+a:hover {
 	scale: 0.96;
 }
 
-.card:hover {
-	scale: 0.96;
-}
-
-super-marquee {
-	transition: 330ms;
-}
-
-.card:hover super-marquee {
+a:hover super-marquee {
 	opacity: 1 !important;
 }
