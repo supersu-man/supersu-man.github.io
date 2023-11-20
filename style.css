@@ -3,14 +3,6 @@
 	src: url(assets/Rubik.ttf);
 }
 
-html,
-body {
-	background-color: #000000;
-	font-family: Rubik;
-	margin: 0px;
-	height: 100%;
-}
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -23,4 +15,8 @@ a:hover {
 
 a:hover super-marquee {
 	opacity: 1 !important;
+}
+
+.transition {
+	transition-duration: 300ms;
 }
