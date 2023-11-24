@@ -1,6 +1,9 @@
 let eventTemplate = (heading, date, images) => {
 
-    let imageList = `<div class="col-12 p-1 fs-3">${heading}</div>`
+    let imageList = `
+    <div class="col-12 p-1 fs-4">${heading}</div>
+    <div class="col-12 p-1">${date}</div>
+    `
     images.forEach(image => {
         imageList+=`
             <div class="col-auto p-1">
