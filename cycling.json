@@ -1,0 +1,106 @@
+[
+    {
+        "heading": "Hyderabad to Delhi - 1578km",
+        "date": "1st March 2020 - 10th March 2020",
+        "images": [
+            "delhi/delhi1.jpg",
+            "delhi/delhi2.jpg",
+            "delhi/delhi3.jpg",
+            "delhi/delhi4.jpg",
+            "delhi/delhi5.jpg",
+            "delhi/delhi6.jpg",
+            "delhi/delhi7.jpg",
+            "delhi/delhi8.jpg",
+            "delhi/delhi9.jpg",
+            "delhi/delhi10.jpg",
+            "delhi/delhi11.jpg",
+            "delhi/delhi12.jpg",
+            "delhi/delhi13.jpg"
+        ]
+    },
+    {
+        "heading": "Hyderabad to Goa - 744km",
+        "date": "22nd November 2019 - 25th November 2019",
+        "images": [
+            "goa/htg7.jpg",
+            "goa/htg4.jpg",
+            "goa/htg3.jpg",
+            "goa/htg2.jpg",
+            "goa/htg5.jpg",
+            "goa/htg6.jpg",
+            "goa/htg1.jpg"
+        ]
+    },
+    {
+        "heading": "Hyderabad to Ananthapur - 363km",
+        "date": "23rd May 2019 - 25th May 20119",
+        "images": [
+            "ananthapur/hta1.jpg",
+            "ananthapur/hta2.jpg"
+        ]
+    },
+    {
+        "heading": "Gandhi Jayanthi Ride - 50km",
+        "date": "2nd October 2017",
+        "images": [
+            "gjr2.jpg",
+            "gjr3.jpg",
+            "gjr4.jpg"
+        ]
+    },
+    {
+        "heading": "Chak De India - 100km",
+        "date": "13th August 2017",
+        "images": [
+            "cdi3.jpg",
+            "cdi4.jpg"
+        ]
+    },
+    {
+        "heading": "Parigi to Hyderabad - 100km",
+        "date": "20th May 2017",
+        "images": [
+            "parigi/pth1.jpg"
+        ]
+    },
+    {
+        "heading": "Hyderabad to Parigi - 100km",
+        "date": "19th May 2017",
+        "images": [
+            "parigi/htp1.jpg",
+            "parigi/htp2.jpg"
+        ]
+    },
+    {
+        "heading": "Gandhi Jayanti Ride - 30km",
+        "date": "2nd October 2016",
+        "images":[
+            "gjr1.jpg"
+        ]
+    },
+    {
+        "heading": "Chak de India Ride 2 - 50km",
+        "date": "7th August 2016",
+        "images": [
+            "cdi1.png",
+            "cdi2.jpg"
+        ]
+    },
+    {
+        "heading": "The Great Cyclathon - 65km",
+        "date": "24th January 2016",
+        "images": [
+            "tgc1.jpg",
+            "tgc2.jpg"
+        ]
+    },
+    {
+        "heading": "Ride to Ramoji Film City - 30km",
+        "date": "26th December 2015",
+        "images": [
+            "rfc1.jpg",
+            "rfc2.jpg",
+            "rfc3.jpg"
+        ]
+    }
+]
