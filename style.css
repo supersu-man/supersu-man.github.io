@@ -20,7 +20,3 @@ a:hover super-marquee {
 .transition {
 	transition-duration: 300ms;
 }
-
-img {
-	max-height: 220px !important;
-}
