@@ -1,22 +1,32 @@
 @font-face {
-	font-family: Rubik;
-	src: url(assets/Rubik.ttf);
+	font-family: fredoka;
+	src: url(assets/fredoka.ttf);
 }
 
 a {
-	text-decoration: none !important;
-	color: inherit;
-	border-radius: 50px;
+    text-decoration: none;
+    color: white;
 }
 
-a:hover {
-	scale: 0.96;
+.carousel-item {
+    transition: 1s !important;
 }
 
-a:hover super-marquee {
-	opacity: 1 !important;
+.carousel-item, .carousel-inner, .card {
+    border-radius: 20px;
 }
 
-.transition {
-	transition-duration: 300ms;
+html, body {
+    font-family: fredoka !important;
+    background: linear-gradient(to top, rgb(7, 24, 46) 0%, rgb(32, 48, 61) 100%);
+    color: white;
+}
+
+.card {
+    border: none;
+    background: rgb(28, 46, 68) !important;
+}
+
+nav {
+    background-color: rgb(32, 48, 61, 0.8);
 }

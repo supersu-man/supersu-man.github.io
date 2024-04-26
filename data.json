@@ -1,0 +1,124 @@
+{
+    "resume": "/resume.pdf",
+    "cv": "/cv.pdf",
+    "cycling": "https://cycling.sumanth.dev",
+    "writings": "https://dev.to/supersuman",
+    "email": "sumanthpera444@gmail.com",
+    "github": "https://github.com/supersu-man",
+    "linkedin": "https://www.linkedin.com/in/sumanthperambuduri",
+    "title" : "Hi there, I'm Sumanth",
+    "subtitle" : "I make software",
+    "carousel": ["2000+ contributions on GitHub", "6-Stars on HackerRank (Problem Solving)", "1000+ downloads on Google Play Store"],
+    "aboutme": "I'm a 22 Year old skilled developer, 2023 CSE graduate from GITAM, Hyd, with a passion for creating full-stack web application and Android native apps. I have an active presence on GitHub, where I share my code and contribute to various projects.",
+    "skills": ["Android Studio", "Kotlin", "Electron", "Typescript", "Python", "Socket.io", "Java", "Angular", "Bootstrap", "GitHub Actions", "MySQL", "Docker", "Express.js", "Ionic", "MySQL"],
+    "otherInterests": "Outside of work I am intersted in Gaming, Singing, Sports and Science.",
+    "pinnedProjects": [
+        {
+            "background": "#BA5B5B",
+            "img":"/assets/gitamite.svg",
+            "height": 200,
+            "marginTop": 4, 
+            "title": "Gitamite",
+            "subtitle": "Student app to check timetable, grades, notices and a lot more.",
+            "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite"
+        },
+        {
+            "background": "#F1F2F4",
+            "img":"/assets/sally.svg",
+            "height": 250,
+            "marginTop": 0,
+            "title": "Sally",
+            "subtitle": "Sally is your trusty companion for managing trip expenses.",
+            "source": "https://github.com/supersu-man/sally",
+            "link": "https://sally.sumanth.dev"
+        },
+        {
+            "background": "#8781BD",
+            "img":"/assets/macronium.svg",
+            "height": 250,
+            "marginTop": 0,
+            "title": "Macronium",
+            "subtitle": "Control your PC using Android.",
+            "source": "https://github.com/supersu-man/macronium-android",
+            "link": "https://sumanth.dev/macronium"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Gitamite",
+            "subtitle": "Student app to check timetable, grades, notices and a lot more.",
+            "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
+            "technologies": "Android Studio, Kotlin"
+        },
+        {
+            "title": "Sally",
+            "subtitle": "Sally is your trusty companion for managing trip expenses.",
+            "source": "https://github.com/supersu-man/sally",
+            "link": "https://sally.sumanth.dev",
+            "technologies": "Angular, Postgres, Docker, Digital Ocean, Primeng"
+        },
+        {
+            "title": "Macronium",
+            "subtitle": "Control your PC using Android.",
+            "source": "https://github.com/supersu-man/macronium-android",
+            "link": "https://sumanth.dev/macronium",
+            "technologies": "Electron, Android Studio, Kotlin"
+        },
+        {
+            "source": "https://github.com/supersu-man/pyt2s",
+            "link": "https://pypi.org/project/pyt2s/",
+            "title": "Pyt2s",
+            "subtitle": "The Python Text to Speech library you've been looking for.",
+            "technologies": "Python"
+        },
+        {
+            "source": "https://github.com/supersu-man/bumper",
+            "link": "https://github.com/supersu-man/bumper/releases",
+            "title": "Bumper",
+            "subtitle": "Bump version-code and version-name of android project",
+            "technologies": "Electron, Vue, Typecript, Vite"
+        },
+        {
+            "source": "https://github.com/supersu-man/spotify-playlist-downloader",
+            "link": "https://github.com/supersu-man/spotify-playlist-downloader/releases",
+            "title": "Spotify Playlist Downloader",
+            "subtitle": "Name says it all.",
+            "technologies": "Android Studio, Kotlin"
+        },
+        {
+            "source": "https://github.com/supersu-man/nerd-clocks",
+            "link": "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
+            "title": "Nerd Clocks",
+            "subtitle": "Nerdy clock widget for your Android",
+            "technologies": "Android Studio, Kotlin"
+        },
+        {
+            "source": "https://github.com/supersu-man/apkupdater-library",
+            "link": "",
+            "title": "Apk Updater",
+            "subtitle": "Library to check for new app update from GitHub releases.",
+            "technologies": "Android Studio, Kotlin"
+        },
+        {
+            "source": "https://github.com/supersu-man/hymn",
+            "link": "https://github.com/supersu-man/hymn/releases",
+            "title": "Hymn",
+            "subtitle": "Stream and download music for free.",
+            "technologies": "Android Studio, Kotlin"
+        },
+        {
+            "source": "https://github.com/supersu-man/gitam-transit",
+            "link": "https://github.com/supersu-man/gitam-transit/releases",
+            "title": "Gitam Transit",
+            "subtitle": "Visualised Gitam bus transport routes.",
+            "technologies": "Android Studio, Kotlin"
+        },
+        {
+            "source": "https://github.com/supersu-man/sangeet-discordbot",
+            "link": "",
+            "title": "Sangeet - Discord Bot",
+            "subtitle": "Streams music on Discord from Youtube Music.",
+            "technologies": "Typescript, Discord.js, Docker"
+        }
+    ]
+}
