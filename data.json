@@ -31,19 +31,16 @@
             "subtitle": "Sally is your trusty companion for managing trip expenses.",
             "source": "https://github.com/supersu-man/sally",
             "link": "https://sally.sumanth.dev"
-        },
-        {
-            "background": "#8781BD",
-            "img":"/assets/macronium.svg",
-            "height": 250,
-            "marginTop": 0,
-            "title": "Macronium",
-            "subtitle": "Control your PC using Android.",
-            "source": "https://github.com/supersu-man/macronium-android",
-            "link": "https://sumanth.dev/macronium"
         }
     ],
     "projects": [
+        {
+            "title": "Kalendar",
+            "subtitle": "Personalized calendar app to help you remember important events.",
+            "source": "https://github.com/supersu-man/kalendar",
+            "link": "https://kalendar.sumanth.dev",
+            "technologies": "Angular, Bootstrap, NestJS, Postgres"
+        },
         {
             "title": "Gitamite",
             "subtitle": "Student app to check timetable, grades, notices and a lot more.",
@@ -55,7 +52,7 @@
             "subtitle": "Sally is your trusty companion for managing trip expenses.",
             "source": "https://github.com/supersu-man/sally",
             "link": "https://sally.sumanth.dev",
-            "technologies": "Angular, Postgres, Docker, Digital Ocean, Primeng"
+            "technologies": "Angular, Postgres, PrimeNG, Express"
         },
         {
             "title": "Macronium",
