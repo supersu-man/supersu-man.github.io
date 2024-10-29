@@ -9,7 +9,7 @@
     "title" : "Hi there, I'm Sumanth",
     "subtitle" : "I make software",
     "carousel": ["2000+ contributions on GitHub", "6-Stars on HackerRank (Problem Solving)", "6000+ downloads on Google Play Store"],
-    "aboutme": "I'm a 22 Year old skilled developer, 2023 CSE graduate from GITAM, Hyd, with a passion for creating full-stack web application and Android native apps. I have an active presence on GitHub, where I share my code and contribute to various projects.",
+    "aboutme": "I'm a 23 Year old skilled developer, 2023 CSE graduate from GITAM, Hyd, with a passion for creating full-stack web application and Android native apps. I have an active presence on GitHub, where I share my code and contribute to various projects.",
     "skills": ["Android Studio", "Kotlin", "Electron", "Typescript", "Python", "Socket.io", "Java", "Angular", "Bootstrap", "GitHub Actions", "MySQL", "Docker", "Express.js", "Ionic", "MySQL"],
     "otherInterests": "Outside of work I am intersted in Gaming, Singing, Sports and Science.",
     "pinnedProjects": [
@@ -35,6 +35,12 @@
     ],
     "projects": [
         {
+            "title": "Electron Typescript Angular",
+            "subtitle": "Really simple ELectron + Typescript + Angular boilerplate.",
+            "source": "https://github.com/supersu-man/electron-typescript-angular",
+            "technologies": "Angular, Electron, TypeScript"
+        },
+        {
             "title": "Kalendar",
             "subtitle": "Personalized calendar app to help you remember important events.",
             "source": "https://github.com/supersu-man/kalendar",
@@ -52,7 +58,7 @@
             "subtitle": "Sally is your trusty companion for managing trip expenses.",
             "source": "https://github.com/supersu-man/sally",
             "link": "https://sally.sumanth.dev",
-            "technologies": "Angular, Postgres, PrimeNG, Express"
+            "technologies": "Angular, Postgres, PrimeNG, NestJS"
         },
         {
             "title": "Macronium",
