@@ -35,6 +35,13 @@
     ],
     "projects": [
         {
+            "title": "Byte Browser",
+            "subtitle": "Really simple folder size stats browser.",
+            "source": "https://github.com/supersu-man/byte-browser",
+            "link": "https://github.com/supersu-man/byte-browser/releases",
+            "technologies": "Angular, PrimeNG, TypeScript, Electron"
+        },
+        {
             "title": "Electron Typescript Angular",
             "subtitle": "Really simple ELectron + Typescript + Angular boilerplate.",
             "source": "https://github.com/supersu-man/electron-typescript-angular",
@@ -45,7 +52,7 @@
             "subtitle": "Personalized calendar app to help you remember important events.",
             "source": "https://github.com/supersu-man/kalendar",
             "link": "https://kalendar.sumanth.dev",
-            "technologies": "Angular, Bootstrap, NestJS, Postgres"
+            "technologies": "Angular, PrimeNG, NestJS, Postgres"
         },
         {
             "title": "Gitamite",
@@ -79,7 +86,7 @@
             "link": "https://github.com/supersu-man/bumper/releases",
             "title": "Bumper",
             "subtitle": "Bump version-code and version-name of android project",
-            "technologies": "Electron, Vue, Typecript, Vite"
+            "technologies": "Angular, PrimeNG, TypeScript, Electron"
         },
         {
             "source": "https://github.com/supersu-man/spotify-playlist-downloader",
@@ -97,7 +104,6 @@
         },
         {
             "source": "https://github.com/supersu-man/apkupdater-library",
-            "link": "",
             "title": "Apk Updater",
             "subtitle": "Library to check for new app update from GitHub releases.",
             "technologies": "Android Studio, Kotlin"
@@ -118,9 +124,14 @@
         },
         {
             "source": "https://github.com/supersu-man/sangeet-discordbot",
-            "link": "",
             "title": "Sangeet - Discord Bot",
             "subtitle": "Streams music on Discord from Youtube Music.",
+            "technologies": "Typescript, Discord.js, Docker"
+        },
+        {
+            "source": "https://github.com/supersu-man/vainko-discordbot",
+            "title": "Vainko - Discord Bot",
+            "subtitle": "Creates temporary voice channels with user limit.",
             "technologies": "Typescript, Discord.js, Docker"
         }
     ]
