@@ -12,25 +12,6 @@ readTextFile = (file, callback) => {
 
 readTextFile("/data.json", (text) => {
     var data = JSON.parse(text)
-
-    document.getElementById('resume').href = data.resume
-    document.getElementById('cv').href = data.cv
-    document.getElementById('cycling').href = data.cycling
-    document.getElementById('writings').href = data.writings
-    document.getElementById('email').href = 'mailto:'+data.email
-    document.getElementById('github').href = data.github
-    document.getElementById('linkedin').href = data.linkedin
-
-    document.getElementById('title').textContent = data.title
-    document.getElementById('subtitle').textContent = data.subtitle
-    data.carousel.forEach((element, index) => {
-        document.getElementById('carousel').innerHTML += `<div class="carousel-item ${index==0?'active':''}">${element}</div>`
-    })
-    document.getElementById('aboutme').innerText = data.aboutme
-    data.skills.forEach((element) => {
-        document.getElementById('skills').innerHTML += `<div class="col-auto">${element}</div>`
-    })
-    document.getElementById('otherInterests').innerText = data.otherInterests
     data.pinnedProjects.forEach((project, index) => {
         document.getElementById('myprojects').innerHTML += `
             <div class="carousel-item text-center ${index==0?'active':''}" style="background-color: ${project.background}; height: 400px;">
