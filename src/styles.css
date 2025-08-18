@@ -1,16 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('assets/dark.css');
-@import url('assets/light.css');
+
 @font-face {
 	font-family: fredoka;
 	src: url(assets/fredoka.ttf);
 }
 
-html, body { 
+html, body {
     height: 100%;
     margin: 0;
-    background-color: var(--md-sys-color-surface); 
-    color: var(--md-sys-color-on-surface);
     font-family: fredoka !important;
 }
 
@@ -24,8 +21,8 @@ md-text-button::part(ripple) {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; /* Shorthand for grid-gap */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
 }
 
 .card-background {
@@ -34,6 +31,10 @@ md-text-button::part(ripple) {
 
 .background-surface {
     background-color: var(--md-sys-color-surface);
+}
+
+.on-surface {
+    color: var(--md-sys-color-on-surface);
 }
 
 .carousel-item {

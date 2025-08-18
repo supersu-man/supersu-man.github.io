@@ -6,19 +6,24 @@ import projectsjson from '../../../assets/projects.json'
   imports: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './portfolio.component.html',
-  styles: ``
+  styleUrls: [
+    './theme/dark.css',
+    './theme/light.css'
+  ]
 })
 export class PortfolioComponent {
 
   projects = projectsjson
-  themeToggle = document.body.classList.contains("dark")
+  themeToggle = true
 
   toggleTheme = () => {
-    if(document.body.classList.contains("dark")) {
-      document.body.classList.replace("dark", "light")
+    const element = document.getElementById("theme")
+    if(!element) return
+    if(element.classList.contains("dark")) {
+      element.classList.replace("dark", "light")
       this.themeToggle = false
     } else {
-      document.body.classList.replace("light", "dark")
+      element.classList.replace("light", "dark")
       this.themeToggle = true
     }
   }
