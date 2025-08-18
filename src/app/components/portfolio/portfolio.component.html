@@ -1,4 +1,4 @@
-<div class="container fixed-top">
+<div class="container fixed-top background-surface">
   <div class="row justify-content-center gap-1 py-3">
     <a class="col-auto small text-decoration-none text-primary" href="#">Home</a>
     <a class="col-auto small text-decoration-none text-primary" href="#about">About</a>
@@ -14,29 +14,24 @@
       <div class="display-2 fw-medium">Hi there, I'm Sumanth</div>
       <div class="display-6 fw-normal">I make software</div>
       <img class="img-fluid pt-5" src="https://ghchart.rshah.org/supersu-man" />
-      <!-- <div id="textCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+      
+      <div class="carousel slide carousel-fade pt-3" data-bs-ride="carousel" data-bs-interval="1000">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div>Dummy text one - Welcome to our site!</div>
-          </div>
-          <div class="carousel-item">
-            <div>Dummy text two - Enjoy the seamless experience.</div>
-          </div>
-          <div class="carousel-item">
-            <div>Dummy text three - Thank you for visiting.</div>
-          </div>
+          <div class="carousel-item active">1500+ contributions on GitHub</div>
+          <div class="carousel-item">6-Stars on HackerRank (Problem Solving)</div>
+          <div class="carousel-item">10000+ downloads on Google Play Store</div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
-  <div class="row justify-content-center gap-1">
+
+  <div class="row justify-content-center gap-1 pt-2">
     <a class="col-auto small text-decoration-none text-primary" href="assets/resume.pdf">Resume</a>
     <a class="col-auto small text-decoration-none text-primary" href="https://cycling.sumanth.dev">Cycling</a>
     <a class="col-auto small text-decoration-none text-primary" href="https://dev.to/supersuman">Dev</a>
     <a class="col-auto small text-decoration-none text-primary" href="sumanthpera444@gmail.com">Email</a>
     <a class="col-auto small text-decoration-none text-primary" href="https://github.com/supersu-man">GitHub</a>
-    <a class="col-auto small text-decoration-none text-primary"
-      href="https://www.linkedin.com/in/sumanthperambuduri">Linkedin</a>
+    <a class="col-auto small text-decoration-none text-primary" href="https://www.linkedin.com/in/sumanthperambuduri">Linkedin</a>
   </div>
 
 </div>
@@ -86,10 +81,10 @@
         <div class="card-background rounded-4 p-3">
           <div class="d-flex justify-content-end gap-2">
             @if (item.source) {
-              <a class="bi-github text-decoration-none text-primary" [href]="item.source"></a>
+              <a class="bi-github text-decoration-none text-white" [href]="item.source"></a>
             }
             @if(item.link) {
-              <a class="bi-globe text-decoration-none text-primary" [href]="item.link"></a>
+              <a class="bi-globe text-decoration-none text-white" [href]="item.link"></a>
             }
           </div>
           <h5>{{item.title}}</h5>

@@ -32,3 +32,12 @@ md-text-button::part(ripple) {
     background-color: var(--md-sys-color-surface-container-highest);
 }
 
+.background-surface {
+    background-color: var(--md-sys-color-surface);
+}
+
+.carousel-item {
+    transition: 1s !important;
+}
+
+

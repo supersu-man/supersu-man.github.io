@@ -78,7 +78,7 @@
               "buildTarget": "supersu-man.github.io:build:production"
             },
             "development": {
-              "buildTarget": "supersu-man.github.io:development"
+              "buildTarget": "supersu-man.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
