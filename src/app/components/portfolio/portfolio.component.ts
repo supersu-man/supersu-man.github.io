@@ -1,4 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import projectsjson from '../../../assets/projects.json'
 
 @Component({
   selector: 'app-portfolio',
@@ -8,6 +9,8 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   styles: ``
 })
 export class PortfolioComponent {
+
+  projects = projectsjson
 
   toggleTheme = () => {
     if(document.body.classList.contains("dark")) {

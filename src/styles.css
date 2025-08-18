@@ -22,3 +22,13 @@ md-text-button::part(ripple) {
     color: var(--md-sys-color-primary) !important;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Shorthand for grid-gap */
+}
+
+.card-background {
+    background-color: var(--md-sys-color-surface-container-highest);
+}
+

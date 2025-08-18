@@ -22,12 +22,13 @@
     <a class="col-auto small text-decoration-none text-primary" href="https://dev.to/supersuman">Dev</a>
     <a class="col-auto small text-decoration-none text-primary" href="sumanthpera444@gmail.com">Email</a>
     <a class="col-auto small text-decoration-none text-primary" href="https://github.com/supersu-man">GitHub</a>
-    <a class="col-auto small text-decoration-none text-primary" href="https://www.linkedin.com/in/sumanthperambuduri">Linkedin</a>
+    <a class="col-auto small text-decoration-none text-primary"
+      href="https://www.linkedin.com/in/sumanthperambuduri">Linkedin</a>
   </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row fs-1">
     <div class="col">
       <div id="about">about me</div>
@@ -35,7 +36,9 @@
   </div>
   <div class="row">
     <div class="col">
-      <div class="pt-3">I'm a 23 Year old skilled developer, 2023 CSE graduate from GITAM, Hyd, with a passion for creating full-stack web application and Android native apps. I have an active presence on GitHub, where I share my code and contribute to various projects.</div>
+      <div class="pt-3">I'm a 23 Year old skilled developer, 2023 CSE graduate from GITAM, Hyd, with a passion for
+        creating full-stack web application and Android native apps. I have an active presence on GitHub, where I share
+        my code and contribute to various projects.</div>
       <div class="pt-2">I work with technologies like:</div>
       <div class="d-flex column-gap-3 flex-wrap">
         <div>Android Studio</div>
@@ -52,6 +55,35 @@
         <div>Docker</div>
         <div>Express.js</div>
         <div>Ionic</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-4">
+  <div class="row fs-1">
+    <div class="col">
+      <div id="projects">projects</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="grid-container pt-3">
+        @for (item of projects; track $index) {
+        <div class="card-background rounded-4 p-3">
+          <div class="d-flex justify-content-end gap-2">
+            @if (item.source) {
+              <a class="bi-github text-decoration-none text-primary" [href]="item.source"></a>
+            }
+            @if(item.link) {
+              <a class="bi-globe text-decoration-none text-primary" [href]="item.link"></a>
+            }
+          </div>
+          <h5>{{item.title}}</h5>
+          <p>{{item.subtitle}}</p>
+          <div class="mt-auto">{{item.technologies}}</div>
+        </div>
+        }
       </div>
     </div>
   </div>
