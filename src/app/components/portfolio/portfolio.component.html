@@ -1,11 +1,17 @@
 <div class="container fixed-top background-surface">
-  <div class="row justify-content-center gap-1 py-3">
-    <a class="col-auto small text-decoration-none text-primary" href="#">Home</a>
-    <a class="col-auto small text-decoration-none text-primary" href="#about">About</a>
-    <a class="col-auto small text-decoration-none text-primary" href="#projects">Projects</a>
+  <div class="row justify-content-between align-items-center" style="height: 40px;">
+    <div class="col-auto d-flex gap-2">
+      <a class="small text-decoration-none text-primary" href="#">Home</a>
+      <a class="small text-decoration-none text-primary" href="#about">About</a>
+      <a class="small text-decoration-none text-primary" href="#projects">Projects</a>
+    </div>
+
+    <div class="col-auto">
+      <md-switch [attr.selected]="themeToggle ? '' : null" (change)="toggleTheme()" style="scale: 0.7;"></md-switch>
+    </div>
   </div>
-  <md-switch class="position-absolute top-0 end-0 py-2" (change)="toggleTheme()" style="scale: 0.7;"></md-switch>
 </div>
+
 
 <div class="container h-100 align-content-center">
 
@@ -81,10 +87,10 @@
         <div class="card-background rounded-4 p-3">
           <div class="d-flex justify-content-end gap-2">
             @if (item.source) {
-              <a class="bi-github text-decoration-none text-white" [href]="item.source"></a>
+              <a class="bi-github text-decoration-none" style="color: var(--md-sys-color-on-surface);" [href]="item.source"></a>
             }
             @if(item.link) {
-              <a class="bi-globe text-decoration-none text-white" [href]="item.link"></a>
+              <a class="bi-globe text-decoration-none" style="color: var(--md-sys-color-on-surface);" [href]="item.link"></a>
             }
           </div>
           <h5>{{item.title}}</h5>

@@ -11,12 +11,15 @@ import projectsjson from '../../../assets/projects.json'
 export class PortfolioComponent {
 
   projects = projectsjson
+  themeToggle = document.body.classList.contains("dark")
 
   toggleTheme = () => {
     if(document.body.classList.contains("dark")) {
       document.body.classList.replace("dark", "light")
+      this.themeToggle = false
     } else {
       document.body.classList.replace("light", "dark")
+      this.themeToggle = true
     }
   }
 
