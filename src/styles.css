@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('assets/dark.css');
+@import url('assets/light.css');
+@font-face {
+	font-family: fredoka;
+	src: url(assets/fredoka.ttf);
+}
+
+html, body { 
+    height: 100%;
+    margin: 0;
+    background-color: var(--md-sys-color-surface); 
+    color: var(--md-sys-color-on-background);
+    font-family: fredoka !important;
+}
+
+md-text-button::part(ripple) {
+    display: none;
+}
+
+.text-primary {
+    color: var(--md-sys-color-primary) !important;
+}
+

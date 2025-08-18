@@ -1,0 +1,18 @@
+name: Build
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Prepare and deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm i
+          npx ng deploy --cname=sumanth.dev --name="Sumanth Perambuduri" --email=35676632+supersu-man@users.noreply.github.com --no-silent
