@@ -14,6 +14,9 @@ html, body {
 md-text-button::part(ripple) {
     display: none;
 }
+md-filled-button {
+    font-family: fredoka !important;
+}
 
 .text-primary {
     color: var(--md-sys-color-primary) !important;

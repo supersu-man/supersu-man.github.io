@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-paysquareroot',
   imports: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './paysquareroot.component.html',
   styleUrls: [
     './theme/dark.css',
@@ -10,6 +11,20 @@ import { Component } from '@angular/core';
   ]
 })
 export class PaysquarerootComponent {
+
+  themeToggle = false
+
+  toggleTheme = () => {
+    const element = document.getElementById("theme")
+    if(!element) return
+    if(element.classList.contains("dark")) {
+      element.classList.replace("dark", "light")
+      this.themeToggle = false
+    } else {
+      element.classList.replace("light", "dark")
+      this.themeToggle = true
+    }
+  }
 
   // {
   //       "title": "PaySquareRoot",
