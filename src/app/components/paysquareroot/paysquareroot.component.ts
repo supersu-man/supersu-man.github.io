@@ -12,7 +12,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 })
 export class PaysquarerootComponent {
 
-  themeToggle = false
+  themeToggle = true
 
   toggleTheme = () => {
     const element = document.getElementById("theme")
