@@ -1,0 +1,32 @@
+<section id="theme" class="h-100 overflow-y-auto background-surface on-surface dark">
+    <div class="container fixed-top background-surface">
+        <div class="row justify-content-between align-items-center" style="height: 40px;">
+            <div class="col-auto">
+                <div role="button" class="text-primary small" routerLink="/paysquareroot">PaySquareRoot</div>
+            </div>
+            <div class="col-auto">
+                <div class="d-flex align-items-center">
+                    Dark theme
+                    <md-switch [attr.selected]="themeToggle ? '' : null" (change)="toggleTheme()" style="scale: 0.7;"></md-switch>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row fs-1">
+            <div class="col">
+                Changelog
+            </div>
+        </div>
+        @for (item of changelog; track $index) {
+        <div class="row">
+            <div class="col">
+                <div class="card-background rounded-4 p-3">
+                    <h5>{{item.versionName}}</h5>
+                    <p>{{item.changelog}}</p>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section>
