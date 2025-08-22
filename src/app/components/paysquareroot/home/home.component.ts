@@ -28,7 +28,7 @@ export class HomeComponent {
   }
 
   downloadApp = () => {
-    
+    window.open('/assets/paysquareroot/paysquareroot-1.0-beta.apk')
   }
 
 }
