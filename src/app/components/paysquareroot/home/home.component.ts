@@ -27,4 +27,8 @@ export class HomeComponent {
     }
   }
 
+  downloadApp = () => {
+    
+  }
+
 }
