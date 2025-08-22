@@ -1,5 +1,10 @@
 [
-    
+    {
+        "title": "PaySquareRoot",
+        "subtitle": "Employee app to check leaves, events, punch times and more.",
+        "link": "/paysquareroot",
+        "technologies": "Android Studio, Kotlin, Jetpack Compose"
+    },
     {
         "title": "Byte Browser",
         "subtitle": "Really simple folder size stats browser.",
