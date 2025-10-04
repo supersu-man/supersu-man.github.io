@@ -1,5 +1,11 @@
 [
     {
+        "title": "Career Desk",
+        "subtitle": "A desktop app built to help you search, scrape, and manage job postings from top company career sites.",
+        "source": "https://github.com/supersu-man/career-desk",
+        "technologies": "Angular, Electron, TypeScript, Angular Material"
+    },
+    {
         "title": "PaySquareRoot",
         "subtitle": "Employee app to check leaves, events, punch times and more.",
         "link": "/paysquareroot",
