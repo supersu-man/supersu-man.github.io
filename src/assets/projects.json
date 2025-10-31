@@ -1,8 +1,9 @@
 [
     {
         "title": "Career Desk",
-        "subtitle": "A desktop app built to help you search, scrape, and manage job postings from top company career sites.",
+        "subtitle": "A desktop app to help you search, scrape, and manage job postings from top company career sites.",
         "source": "https://github.com/supersu-man/career-desk",
+        "link": "https://github.com/supersu-man/career-desk/releases",
         "technologies": "Angular, Electron, TypeScript, Angular Material"
     },
     {
