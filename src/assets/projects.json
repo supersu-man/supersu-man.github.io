@@ -1,5 +1,12 @@
 [
     {
+        "title": "Spirit Shelf",
+        "subtitle": "Discover amazing cocktails and drink recipes on Spirit Shelf.",
+        "source": "https://github.com/supersu-man/spirit-shelf",
+        "link": "https://spiritshelf.sumanth.dev",
+        "technologies": "Angular, TypeScript, PrimeNG"
+    },
+    {
         "title": "Career Desk",
         "subtitle": "A desktop app to help you search, scrape, and manage job postings from top company career sites.",
         "source": "https://github.com/supersu-man/career-desk",
