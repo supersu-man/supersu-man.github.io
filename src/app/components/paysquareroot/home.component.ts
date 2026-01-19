@@ -1,14 +1,13 @@
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink],
+  imports: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './home.component.html',
   styleUrls: [
-    '../theme/dark.css',
-    '../theme/light.css'
+    './theme/dark.css',
+    './theme/light.css'
   ]
 })
 export class HomeComponent {
