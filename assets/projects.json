@@ -14,10 +14,44 @@
         "technologies": "Angular, Electron, TypeScript, Angular Material"
     },
     {
-        "title": "PaySquareRoot",
-        "subtitle": "Employee app to check leaves, events, punch times and more.",
-        "link": "/paysquareroot",
-        "technologies": "Android Studio, Kotlin, Jetpack Compose"
+        "title": "Sally",
+        "subtitle": "Sally is your trusty companion for managing trip expenses.",
+        "source": "https://github.com/supersu-man/sally",
+        "link": "https://sally.sumanth.dev",
+        "technologies": "Angular, Postgres, PrimeNG, NestJS"
+    },
+    {
+        "title": "Gitamite",
+        "subtitle": "Student app to check timetable, grades, notices and a lot more.",
+        "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
+        "technologies": "Android Studio, Kotlin"
+    },
+    {
+        "source": "https://github.com/supersu-man/spotify-playlist-downloader",
+        "link": "https://github.com/supersu-man/spotify-playlist-downloader/releases",
+        "title": "Spotify Playlist Downloader",
+        "subtitle": "Name says it all.",
+        "technologies": "Android Studio, Kotlin"
+    },
+    {
+        "source": "https://github.com/supersu-man/pyt2s",
+        "link": "https://pypi.org/project/pyt2s/",
+        "title": "Pyt2s",
+        "subtitle": "The Python Text to Speech library you've been looking for.",
+        "technologies": "Python"
+    },
+    {
+        "source": "https://github.com/supersu-man/apkupdater-library",
+        "title": "Apk Updater",
+        "subtitle": "Library to check for new app update from GitHub releases.",
+        "technologies": "Android Studio, Kotlin"
+    },
+    {
+        "source": "https://github.com/supersu-man/bumper",
+        "link": "https://github.com/supersu-man/bumper/releases",
+        "title": "Bumper",
+        "subtitle": "Bump version-code and version-name of android project",
+        "technologies": "Angular, PrimeNG, TypeScript, Electron"
     },
     {
         "title": "Byte Browser",
@@ -40,45 +74,11 @@
         "technologies": "Angular, PrimeNG, NestJS, Postgres"
     },
     {
-        "title": "Gitamite",
-        "subtitle": "Student app to check timetable, grades, notices and a lot more.",
-        "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
-        "technologies": "Android Studio, Kotlin"
-    },
-    {
-        "title": "Sally",
-        "subtitle": "Sally is your trusty companion for managing trip expenses.",
-        "source": "https://github.com/supersu-man/sally",
-        "link": "https://sally.sumanth.dev",
-        "technologies": "Angular, Postgres, PrimeNG, NestJS"
-    },
-    {
         "title": "Macronium",
         "subtitle": "Control your PC using Android.",
         "source": "https://github.com/supersu-man/macronium-android",
         "link": "https://sumanth.dev/macronium",
         "technologies": "Electron, Android Studio, Kotlin"
-    },
-    {
-        "source": "https://github.com/supersu-man/pyt2s",
-        "link": "https://pypi.org/project/pyt2s/",
-        "title": "Pyt2s",
-        "subtitle": "The Python Text to Speech library you've been looking for.",
-        "technologies": "Python"
-    },
-    {
-        "source": "https://github.com/supersu-man/bumper",
-        "link": "https://github.com/supersu-man/bumper/releases",
-        "title": "Bumper",
-        "subtitle": "Bump version-code and version-name of android project",
-        "technologies": "Angular, PrimeNG, TypeScript, Electron"
-    },
-    {
-        "source": "https://github.com/supersu-man/spotify-playlist-downloader",
-        "link": "https://github.com/supersu-man/spotify-playlist-downloader/releases",
-        "title": "Spotify Playlist Downloader",
-        "subtitle": "Name says it all.",
-        "technologies": "Android Studio, Kotlin"
     },
     {
         "source": "https://github.com/supersu-man/nerd-clocks",
@@ -88,10 +88,10 @@
         "technologies": "Android Studio, Kotlin"
     },
     {
-        "source": "https://github.com/supersu-man/apkupdater-library",
-        "title": "Apk Updater",
-        "subtitle": "Library to check for new app update from GitHub releases.",
-        "technologies": "Android Studio, Kotlin"
+        "title": "PaySquareRoot",
+        "subtitle": "Employee app to check leaves, events, punch times and more.",
+        "link": "/paysquareroot",
+        "technologies": "Android Studio, Kotlin, Jetpack Compose"
     },
     {
         "source": "https://github.com/supersu-man/hymn",
