@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { HomeComponent } from './components/paysquareroot/home.component';
+import { Portfolio } from './components/portfolio/portfolio';
+import { PaySquareRoot } from './components/paysquareroot/paysquareroot';
 
 export const routes: Routes = [
-    { component: PortfolioComponent, path: "" },
-    { component: HomeComponent, path: "paysquareroot" },
+    { component: Portfolio, path: "" },
+    { component: PaySquareRoot, path: "paysquareroot" },
 ];

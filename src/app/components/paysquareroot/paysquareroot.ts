@@ -1,21 +1,15 @@
 import { Component } from '@angular/core';
-import projectsjson from '../../../assets/projects.json'
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-portfolio',
-  imports: [MatSlideToggleModule, MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule],
-  schemas: [],
-  templateUrl: './portfolio.component.html',
+  selector: 'app-paysquareroot',
+  imports: [MatSlideToggleModule, MatButtonModule],
+  templateUrl: './paysquareroot.html',
   styleUrls: ['./theme.scss']
 })
-export class PortfolioComponent {
+export class PaySquareRoot {
 
-  projects = projectsjson
   themeToggle = true
 
   toggleTheme = () => {
@@ -28,6 +22,10 @@ export class PortfolioComponent {
       element.classList.replace("light", "dark")
       this.themeToggle = true
     }
+  }
+
+  downloadApp = () => {
+    window.open('/paysquareroot/paysquareroot-1.0-beta.apk')
   }
 
 }
