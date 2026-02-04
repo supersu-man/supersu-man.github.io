@@ -1,107 +1,83 @@
-<div id="theme" class="dark background-surface on-surface h-100 overflow-y-auto">
+<div id="theme" class="dark surface h-screen overflow-y-auto">
 
-  <div class="container fixed-top background-surface">
-    <div class="row justify-content-between align-items-center" style="height: 40px;">
-      <div class="col-auto d-flex gap-2">
-        <a class="small text-decoration-none text-primary" href="#">Home</a>
-        <a class="small text-decoration-none text-primary" href="#about">About</a>
-        <a class="small text-decoration-none text-primary" href="#projects">Projects</a>
+  <div class="container mx-auto px-4 sticky top-0 surface z-50">
+    <div class="flex justify-between items-center h-10">
+      <div class="flex gap-2 primary">
+        <a class="text-sm no-underline text-primary" href="#">Home</a>
+        <a class="text-sm no-underline text-primary" href="#about">About</a>
+        <a class="text-sm no-underline text-primary" href="#projects">Projects</a>
       </div>
 
-      <div class="col-auto">
-        <md-switch [attr.selected]="themeToggle ? '' : null" (change)="toggleTheme()" style="scale: 0.7;"></md-switch>
-      </div>
-    </div>
-  </div>
-
-  <div class="container h-100 align-content-center">
-
-    <div class="row text-center">
-      <div class="col">
-        <div class="display-2 fw-medium">Hi there, I'm Sumanth</div>
-        <div class="display-6 fw-normal">I make software</div>
-        <img class="img-fluid pt-5" src="https://ghchart.rshah.org/supersu-man" />
-
-        <div class="carousel slide carousel-fade pt-3" data-bs-ride="carousel" data-bs-interval="1000">
-          <div class="carousel-inner">
-            <div class="carousel-item active">1500+ contributions on GitHub</div>
-            <div class="carousel-item">6-Stars on HackerRank (Problem Solving)</div>
-            <div class="carousel-item">10000+ downloads on Google Play Store</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center gap-1 pt-2">
-      <a class="col-auto small text-decoration-none text-primary" href="assets/resume.pdf">Resume</a>
-      <a class="col-auto small text-decoration-none text-primary" href="https://cycling.sumanth.dev">Cycling</a>
-      <a class="col-auto small text-decoration-none text-primary" href="https://dev.to/supersuman">Dev</a>
-      <a class="col-auto small text-decoration-none text-primary" href="sumanthpera444@gmail.com">Email</a>
-      <a class="col-auto small text-decoration-none text-primary" href="https://github.com/supersu-man">GitHub</a>
-      <a class="col-auto small text-decoration-none text-primary" href="https://leetcode.com/u/sumanthpera444">LeetCode</a>
-      <a class="col-auto small text-decoration-none text-primary" href="https://www.linkedin.com/in/sumanthperambuduri">Linkedin</a>
-    </div>
-
-  </div>
-
-  <div class="container pb-4">
-    <div class="row fs-1">
-      <div class="col">
-        <div id="about" style="scroll-margin-top: 40px;">about me</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="pt-3">I'm a 24 Year old skilled developer, 2023 CSE graduate from GITAM, Hyd, with a passion for
-          creating full-stack web application and Android native apps. I have an active presence on GitHub, where I
-          share my code and contribute to various projects.</div>
-        <div class="pt-2">I work with technologies like:</div>
-        <div class="d-flex column-gap-3 flex-wrap">
-          <div>Android Studio</div>
-          <div>Kotlin</div>
-          <div>Electron</div>
-          <div>Typescript</div>
-          <div>Python</div>
-          <div>Socket.io</div>
-          <div>Java</div>
-          <div>Angular</div>
-          <div>Bootstrap</div>
-          <div>GitHub Actions</div>
-          <div>MySQL</div>
-          <div>Docker</div>
-          <div>Express.js</div>
-          <div>Ionic</div>
-        </div>
+      <div class="flex">
+        <mat-slide-toggle [checked]="themeToggle" class="scale-[0.7]" (change)="toggleTheme()"></mat-slide-toggle>
       </div>
     </div>
   </div>
 
-  <div class="container pb-4">
-    <div class="row fs-1">
-      <div class="col">
-        <div id="projects" style="scroll-margin-top: 40px;">projects</div>
-      </div>
+  <div class="container mx-auto px-4 h-full flex flex-col justify-center">
+
+    <div class="text-center">
+      <div class="text-4xl md:text-6xl font-medium">Hi there, I'm Sumanth</div>
+      <div class="text-xl md:text-3xl font-normal">I make software</div>
+      <img class="max-w-full h-auto pt-12 mx-auto" src="https://ghchart.rshah.org/supersu-man" />
     </div>
-    <div class="row">
-      <div class="col">
-        <div class="grid-container pt-3">
-          @for (item of projects; track $index) {
-          <div class="card-background rounded-4 p-3">
-            <div class="d-flex justify-content-end gap-2">
-              @if (item.source) {
-              <a class="bi-github text-decoration-none" style="color: var(--md-sys-color-on-surface);" [href]="item.source"></a>
-              }
-              @if(item.link) {
-              <a class="bi-globe text-decoration-none" style="color: var(--md-sys-color-on-surface);" [href]="item.link"></a>
-              }
-            </div>
-            <h5>{{item.title}}</h5>
-            <p>{{item.subtitle}}</p>
-            <div class="mt-auto">{{item.technologies}}</div>
-          </div>
+
+    <div class="flex justify-center flex-wrap gap-4 pt-4">
+      <a class="text-sm no-underline text-primary" href="assets/resume.pdf">Resume</a>
+      <a class="text-sm no-underline text-primary" href="https://cycling.sumanth.dev">Cycling</a>
+      <a class="text-sm no-underline text-primary" href="https://dev.to/supersuman">Dev</a>
+      <a class="text-sm no-underline text-primary" href="mailto:sumanthpera444@gmail.com">Email</a>
+      <a class="text-sm no-underline text-primary" href="https://github.com/supersu-man">GitHub</a>
+      <a class="text-sm no-underline text-primary" href="https://leetcode.com/u/sumanthpera444">LeetCode</a>
+      <a class="text-sm no-underline text-primary" href="https://www.linkedin.com/in/sumanthperambuduri">Linkedin</a>
+    </div>
+
+  </div>
+
+  <div class="container mx-auto px-4 pb-8">
+    <div class="text-4xl" id="about" style="scroll-margin-top: 40px;">about me</div>
+    <div class="pt-3">
+      I'm a 24 Year old skilled developer, 2023 CSE graduate from GITAM, Hyd, with a passion for
+      creating full-stack web application and Android native apps. I have an active presence on GitHub, where I
+      share my code and contribute to various projects.
+    </div>
+    <div class="pt-2 font-medium">I work with technologies like:</div>
+    <div class="flex gap-4 flex-wrap pt-2">
+      <div>Android Studio</div>
+      <div>Kotlin</div>
+      <div>Electron</div>
+      <div>Typescript</div>
+      <div>Python</div>
+      <div>Socket.io</div>
+      <div>Java</div>
+      <div>Angular</div>
+      <div>Bootstrap</div>
+      <div>GitHub Actions</div>
+      <div>MySQL</div>
+      <div>Docker</div>
+      <div>Express.js</div>
+      <div>Ionic</div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 pb-8">
+    <div class="text-4xl" id="projects" style="scroll-margin-top: 40px;">projects</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+      @for (item of projects; track $index) {
+      <mat-card appearance="filled" class="p-4">
+        <div class="flex justify-end gap-2">
+          @if (item.source) {
+          <a class="bi-globe no-underline text-on-surface" [href]="item.source"><mat-icon>code</mat-icon></a>
+          }
+          @if(item.link) {
+          <a class="bi-globe no-underline text-on-surface" [href]="item.link"><mat-icon>open_in_new</mat-icon></a>
           }
         </div>
-      </div>
+        <h5 class="text-xl font-bold">{{item.title}}</h5>
+        <p class="text-sm opacity-80">{{item.subtitle}}</p>
+        <div class="mt-auto pt-4 text-xs font-mono uppercase tracking-wider">{{item.technologies}}</div>
+      </mat-card>
+      }
     </div>
   </div>
 

@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use 'tailwindcss';
+@use '@angular/material' as mat;
+
+@font-face {
+	font-family: fredoka;
+	src: url(assets/fredoka.ttf);
+}
+
+html {
+  height: 100%;
+  @include mat.theme((
+    density: -1,
+  ));
+}
+
+body {
+  font-family: fredoka !important;
+  margin: 0;
+  height: 100%;
+}
+
+.surface {
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+}
+
+.primary {
+  color: var(--mat-sys-primary);
+}

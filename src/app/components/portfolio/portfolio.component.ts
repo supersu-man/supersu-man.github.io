@@ -1,15 +1,17 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component } from '@angular/core';
 import projectsjson from '../../../assets/projects.json'
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [MatSlideToggleModule, MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule],
+  schemas: [],
   templateUrl: './portfolio.component.html',
-  styleUrls: [
-    './theme/dark.css',
-    './theme/light.css'
-  ]
+  styleUrls: ['./theme.scss']
 })
 export class PortfolioComponent {
 
@@ -18,8 +20,8 @@ export class PortfolioComponent {
 
   toggleTheme = () => {
     const element = document.getElementById("theme")
-    if(!element) return
-    if(element.classList.contains("dark")) {
+    if (!element) return
+    if (element.classList.contains("dark")) {
       element.classList.replace("dark", "light")
       this.themeToggle = false
     } else {

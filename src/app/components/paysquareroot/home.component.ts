@@ -1,14 +1,12 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
-  imports: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [MatSlideToggleModule, MatButtonModule],
   templateUrl: './home.component.html',
-  styleUrls: [
-    './theme/dark.css',
-    './theme/light.css'
-  ]
+  styleUrls: ['./theme.scss']
 })
 export class HomeComponent {
 
@@ -16,8 +14,8 @@ export class HomeComponent {
 
   toggleTheme = () => {
     const element = document.getElementById("theme")
-    if(!element) return
-    if(element.classList.contains("dark")) {
+    if (!element) return
+    if (element.classList.contains("dark")) {
       element.classList.replace("dark", "light")
       this.themeToggle = false
     } else {
