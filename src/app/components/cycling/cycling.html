@@ -1,0 +1,61 @@
+<div id="theme" class="dark surface h-screen overflow-y-auto">
+
+    <div class="container mx-auto px-4 sticky top-0 surface z-50">
+        <div class="flex justify-between items-center h-10">
+            <div class="flex gap-2 primary">
+                <a class="text-sm no-underline text-primary" href="/">Home</a>
+            </div>
+            <div class="flex">
+                <mat-slide-toggle [checked]="themeToggle" class="scale-[0.7]"
+                    (change)="toggleTheme()"></mat-slide-toggle>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 pt-12 text-center md:text-left">
+        <h1 class="text-4xl md:text-6xl font-medium pt-3">My Cycling Gallery</h1>
+        <p class="text-xl md:text-3xl font-normal pt-3 max-w-2xl">
+            A collection of moments from my various rides and trips. Each photo captures a piece of the journey, the
+            landscapes explored, and the thrill of the ride.
+        </p>
+    </div>
+
+    <div class="container mx-auto px-4 pb-12">
+        @for (trip of trips; track trip.heading) {
+        <div class="mt-12">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end border-b border-white/10 pb-2">
+                <h2 class="text-3xl md:text-4xl font-bold">{{trip.heading}}</h2>
+                <div class="text-sm opacity-60">{{trip.date}}</div>
+            </div>
+            <p class="mt-4 mb-8 text-lg opacity-80" [innerHTML]="trip.description"></p>
+
+            <div class="columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
+                @for (image of trip.images; track image) {
+                <div class="break-inside-avoid rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-[1.02] transition-transform duration-300"
+                    (click)="openLightbox(image)">
+                    <img [src]="'/cycling/'+image" class="w-full h-auto" loading="lazy">
+                </div>
+                }
+            </div>
+        </div>
+        }
+    </div>
+
+    <!-- Lightbox Overlay -->
+    @if (selectedImage) {
+    <div class="fixed inset-0 z-[100] bg-black/90 flex flex-col items-center justify-center p-4"
+        (click)="closeLightbox()">
+        <div class="relative max-w-5xl w-full flex flex-col items-center" (click)="$event.stopPropagation()">
+            <img [src]="'/cycling/'+selectedImage" class="max-h-[85vh] w-auto rounded-2xl shadow-2xl">
+            <button mat-flat-button color="primary" class="mt-6" (click)="closeLightbox()">Close</button>
+        </div>
+    </div>
+    }
+
+    <div class="container mx-auto px-4 py-16 text-center">
+        <button mat-flat-button color="primary" (click)="openStrava()">
+            Follow on Strava
+        </button>
+    </div>
+
+</div>

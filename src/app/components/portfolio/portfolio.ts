@@ -5,10 +5,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-portfolio',
-  imports: [MatSlideToggleModule, MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule],
+  imports: [MatSlideToggleModule, MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule, RouterLink],
   schemas: [],
   templateUrl: './portfolio.html',
   styleUrls: ['./theme.scss']

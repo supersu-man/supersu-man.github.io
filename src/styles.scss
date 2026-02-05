@@ -4,15 +4,13 @@
 @use '@angular/material' as mat;
 
 @font-face {
-	font-family: fredoka;
-	src: url(/fredoka.ttf);
+  font-family: fredoka;
+  src: url(/fredoka.ttf);
 }
 
 html {
   height: 100%;
-  @include mat.theme((
-    density: -1,
-  ));
+  @include mat.theme((density: -1));
 }
 
 body {
