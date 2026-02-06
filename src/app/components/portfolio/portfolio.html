@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div class="container mx-auto px-4 h-full flex flex-col justify-center">
+  <div class="container mx-auto px-4 h-[calc(100vh-2.5rem)] flex flex-col justify-center">
 
     <div class="text-center">
       <div class="text-4xl md:text-6xl font-medium">Hi there, I'm Sumanth</div>
@@ -67,13 +67,13 @@
       <mat-card appearance="filled" class="p-4">
         <div class="flex justify-end gap-2">
           @if (item.source) {
-          <a class="bi-globe no-underline text-on-surface" [href]="item.source"><mat-icon>code</mat-icon></a>
+          <a class="no-underline text-on-surface" [href]="item.source"><mat-icon>code</mat-icon></a>
           }
           @if(item.link) {
-          <a class="bi-globe no-underline text-on-surface" [href]="item.link"><mat-icon>open_in_new</mat-icon></a>
+          <a class="no-underline text-on-surface" [href]="item.link"><mat-icon>open_in_new</mat-icon></a>
           }
         </div>
-        <h5 class="text-xl font-bold">{{item.title}}</h5>
+        <h5 class="text-xl font-medium">{{item.title}}</h5>
         <p class="text-sm opacity-80">{{item.subtitle}}</p>
         <div class="mt-auto pt-4 text-xs font-mono uppercase tracking-wider">{{item.technologies}}</div>
       </mat-card>
