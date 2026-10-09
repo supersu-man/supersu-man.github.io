@@ -1,5 +1,25 @@
 [
     {
+        "title": "Pennywise",
+        "subtitle": "A clean, minimal, and offline-first expense tracker.",
+        "link": "https://play.google.com/store/apps/details?id=dev.sumanth.pennywise",
+        "technologies": "Android Studio, Kotlin"
+    },
+    {
+        "title": "Splitmate",
+        "subtitle": "Splitmate is your trusty companion for managing trip expenses.",
+        "source": "https://github.com/supersu-man/splitmate",
+        "link": "https://splitmate.sumanth.dev",
+        "technologies": "Angular, Postgres, PrimeNG"
+    },
+    {
+        "source": "https://github.com/supersu-man/spotify-playlist-downloader",
+        "link": "https://github.com/supersu-man/spotify-playlist-downloader/releases",
+        "title": "Spotify Playlist Downloader",
+        "subtitle": "Name says it all.",
+        "technologies": "Android Studio, Kotlin"
+    },
+    {
         "title": "Spirit Shelf",
         "subtitle": "Discover amazing cocktails and drink recipes on Spirit Shelf.",
         "source": "https://github.com/supersu-man/spirit-shelf",
@@ -14,23 +34,9 @@
         "technologies": "Angular, Electron, TypeScript, Angular Material"
     },
     {
-        "title": "Sally",
-        "subtitle": "Sally is your trusty companion for managing trip expenses.",
-        "source": "https://github.com/supersu-man/sally",
-        "link": "https://sally.sumanth.dev",
-        "technologies": "Angular, Postgres, PrimeNG, NestJS"
-    },
-    {
         "title": "Gitamite",
         "subtitle": "Student app to check timetable, grades, notices and a lot more.",
         "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
-        "technologies": "Android Studio, Kotlin"
-    },
-    {
-        "source": "https://github.com/supersu-man/spotify-playlist-downloader",
-        "link": "https://github.com/supersu-man/spotify-playlist-downloader/releases",
-        "title": "Spotify Playlist Downloader",
-        "subtitle": "Name says it all.",
         "technologies": "Android Studio, Kotlin"
     },
     {
