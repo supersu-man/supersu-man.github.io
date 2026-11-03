@@ -1,35 +1,31 @@
-import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
-import tripsJson from '../../../../public/cycling/cycling.json'
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatButtonModule } from '@angular/material/button';
+import { Component, inject, OnInit } from '@angular/core';
+import tripsJson from '../../../../public/cycling/cycling.json';
+import { RouterLink } from '@angular/router';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-cycling',
-  imports: [MatCardModule, MatGridListModule, MatSlideToggleModule, MatButtonModule],
+  imports: [RouterLink],
   templateUrl: './cycling.html',
-  styleUrl: './theme.scss',
 })
-export class Cycling {
+export class Cycling implements OnInit {
+  private seo = inject(SeoService);
   trips = tripsJson;
-  themeToggle = true;
   selectedImage: string | null = null;
 
-  toggleTheme = () => {
-    const element = document.getElementById("theme")
-    if (!element) return
-    if (element.classList.contains("dark")) {
-      element.classList.replace("dark", "light")
-      this.themeToggle = false
-    } else {
-      element.classList.replace("light", "dark")
-      this.themeToggle = true
-    }
+  ngOnInit(): void {
+    this.seo.updateSeo({
+      title: 'Cycling Adventures & Photo Gallery | Sumanth',
+      description: 'Explore cycling trips, routes, photography, and endurance rides completed across India by Sumanth.',
+      ogUrl: 'https://sumanth.dev/cycling',
+      keywords: 'Cycling, Strava, Cycling Gallery, Rides, Sumanth, Bicycle Adventures'
+    });
   }
 
   openStrava() {
-    window.open('https://www.strava.com/athletes/28674981', '_blank');
+    if (typeof window !== 'undefined') {
+      window.open('https://www.strava.com/athletes/28674981', '_blank');
+    }
   }
 
   openLightbox(image: string) {
@@ -40,4 +36,3 @@ export class Cycling {
     this.selectedImage = null;
   }
 }
-

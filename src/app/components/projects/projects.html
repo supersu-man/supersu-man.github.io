@@ -1,0 +1,201 @@
+<div class="min-h-screen bg-[#0c0e0d] text-[#e3e7e4] selection:bg-[#a8ebc0] selection:text-[#0c0e0d] font-sans antialiased flex flex-col justify-between">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-[#0c0e0d]/85 backdrop-blur-md border-b border-white/[0.05]">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-[#a8ebc0] transition-colors flex items-center gap-2">
+        <span>sumanth</span>
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#a8ebc0]"></span>
+      </a>
+
+      <nav class="flex items-center gap-6 md:gap-8">
+        <a routerLink="/" class="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-1.5">
+          <span>←</span>
+          <span>Back to Home</span>
+        </a>
+        <a routerLink="/cycling" class="text-sm text-neutral-400 hover:text-white transition-colors hidden sm:inline">
+          Cycling
+        </a>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+            class="border border-white/20 hover:border-white hover:bg-white/5 text-white text-xs md:text-sm font-medium px-4 py-1.5 rounded-full transition-all inline-flex items-center gap-1.5">
+          <span>Resume</span>
+          <span class="text-xs">↗</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+    
+    <!-- Page Header -->
+    <div class="max-w-3xl mb-12 md:mb-16">
+      <div class="text-xs font-mono uppercase tracking-widest text-[#a8ebc0] mb-3">
+        INDEX / 2020 — 2026
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.08]">
+        All Projects &<br>
+        <span class="text-[#78857d]">Open Source Work.</span>
+      </h1>
+      <p class="text-neutral-400 text-base md:text-lg lg:text-xl font-normal leading-relaxed mt-4">
+        A full archive of native Android applications, full-stack platforms, desktop clients, developer tools, and open-source packages.
+      </p>
+    </div>
+
+    <!-- Controls: Search & Category Filter Bar -->
+    <div class="flex flex-col gap-6 mb-12">
+      <!-- Search Input -->
+      <div class="relative max-w-xl">
+        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-neutral-500">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+        </div>
+        <input
+          type="text"
+          [(ngModel)]="searchQuery"
+          placeholder="Search projects by name, keyword, or tech (Kotlin, Angular, Python)..."
+          class="w-full pl-12 pr-10 py-3.5 bg-[#0e1410] border border-white/10 rounded-2xl text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-[#a8ebc0] transition-colors"
+        />
+        @if (searchQuery) {
+          <button
+            (click)="searchQuery = ''"
+            class="absolute inset-y-0 right-0 pr-4 flex items-center text-neutral-400 hover:text-white"
+            title="Clear search">
+            ✕
+          </button>
+        }
+      </div>
+
+      <!-- Filter Pills -->
+      <div class="flex flex-wrap items-center gap-2.5">
+        @for (cat of categories; track cat) {
+          <button
+            (click)="setCategory(cat)"
+            [class]="activeCategory === cat
+              ? 'bg-[#a8ebc0] text-[#0a150e] font-semibold border-[#a8ebc0]'
+              : 'bg-white/[0.03] text-neutral-400 hover:text-white hover:bg-white/[0.06] border-white/10'"
+            class="text-xs md:text-sm px-4 py-2 rounded-full border transition-all duration-200 cursor-pointer flex items-center gap-2">
+            <span>{{ cat }}</span>
+            <span [class]="activeCategory === cat ? 'bg-[#0a150e]/20 text-[#0a150e]' : 'bg-white/10 text-neutral-400'"
+                  class="text-[10px] font-mono px-2 py-0.5 rounded-full">
+              {{ getCategoryCount(cat) }}
+            </span>
+          </button>
+        }
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    @if (filteredProjects.length > 0) {
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        @for (item of filteredProjects; track item.title) {
+          <div class="group relative rounded-3xl bg-[#0e1410]/70 border border-white/10 hover:border-[#a8ebc0]/40 p-6 md:p-7 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-[#a8ebc0]/5 hover:-translate-y-1">
+            
+            <div>
+              <!-- Top Row: Category Badge + External Link Icon -->
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <span class="text-[11px] font-mono uppercase tracking-wider text-[#a8ebc0] bg-[#163622] px-2.5 py-1 rounded-full font-medium">
+                  {{ item.category || 'Software' }}
+                </span>
+
+                @if (item.link) {
+                  <a [href]="item.link" target="_blank" rel="noopener noreferrer"
+                      class="text-neutral-400 hover:text-[#a8ebc0] transition-colors p-1"
+                      [title]="'Open ' + item.title">
+                    <span class="text-base group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform inline-block">↗</span>
+                  </a>
+                }
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl md:text-2xl font-bold tracking-tight text-white group-hover:text-[#a8ebc0] transition-colors mb-2.5">
+                @if (item.link) {
+                  <a [href]="item.link" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                    {{ item.title }}
+                  </a>
+                } @else {
+                  <span>{{ item.title }}</span>
+                }
+              </h3>
+
+              <!-- Subtitle -->
+              <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+                {{ item.subtitle }}
+              </p>
+            </div>
+
+            <!-- Bottom Row: Tech Tags & Platform Badge -->
+            <div class="pt-4 border-t border-white/[0.06] flex flex-col gap-3">
+              <div class="flex flex-wrap gap-1.5">
+                @for (tech of getTechList(item.technologies); track tech) {
+                  <span class="text-[11px] font-mono px-2.5 py-0.5 rounded-md bg-white/[0.04] text-neutral-300 border border-white/5">
+                    {{ tech }}
+                  </span>
+                }
+              </div>
+
+              @if (item.link) {
+                <div class="pt-1 flex items-center justify-between text-xs font-mono text-neutral-500">
+                  <span class="text-neutral-400">
+                    @if (isGithubLink(item.link)) {
+                      GitHub Repository
+                    } @else if (isPlayStoreLink(item.link)) {
+                      Google Play Store
+                    } @else if (isPypiLink(item.link)) {
+                      PyPI Package
+                    } @else {
+                      Live Deployment
+                    }
+                  </span>
+                  <a [href]="item.link" target="_blank" rel="noopener noreferrer"
+                      class="text-[#a8ebc0] hover:underline font-medium inline-flex items-center gap-1">
+                    <span>View</span>
+                    <span>→</span>
+                  </a>
+                </div>
+              }
+            </div>
+
+          </div>
+        }
+      </div>
+    } @else {
+      <!-- Empty State -->
+      <div class="text-center py-20 px-6 rounded-3xl bg-[#0e1410]/50 border border-white/10 max-w-md mx-auto">
+        <div class="text-4xl mb-4">🔍</div>
+        <h3 class="text-xl font-bold text-white mb-2">No projects found</h3>
+        <p class="text-neutral-400 text-sm mb-6">
+          No projects matched "<span class="text-white">{{ searchQuery }}</span>" in the selected category.
+        </p>
+        <button
+          (click)="searchQuery = ''; activeCategory = 'All'"
+          class="px-5 py-2.5 rounded-full bg-[#a8ebc0] text-[#0a150e] font-semibold text-sm hover:bg-[#8eedb4] transition-colors">
+          Reset Filters
+        </button>
+      </div>
+    }
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/[0.08] py-8 mt-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-500">
+      <div class="flex items-center gap-2 text-neutral-400">
+        <span class="font-bold text-white">sumanth</span>
+        <span>•</span>
+        <span>© 2026 Sumanth Perambuduri</span>
+      </div>
+
+      <div class="text-neutral-500 text-center">
+        Designed & Built with Angular & Tailwind CSS
+      </div>
+
+      <div>
+        <a routerLink="/" class="hover:text-white transition-colors">Back to home ↑</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+

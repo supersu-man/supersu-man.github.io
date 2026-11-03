@@ -1,128 +1,135 @@
 [
     {
         "title": "Pennywise",
-        "subtitle": "A clean, minimal, and offline-first expense tracker.",
+        "subtitle": "A local-first personal finance app with zero cloud tracking, instant response times, and zero subscriptions.",
         "link": "https://play.google.com/store/apps/details?id=dev.sumanth.pennywise",
-        "technologies": "Android Studio, Kotlin"
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android"
     },
     {
         "title": "Splitmate",
-        "subtitle": "Splitmate is your trusty companion for managing trip expenses.",
-        "source": "https://github.com/supersu-man/splitmate",
+        "subtitle": "Lightweight, shared expense calculator built for road trips and group travels.",
         "link": "https://splitmate.sumanth.dev",
-        "technologies": "Angular, Postgres, PrimeNG"
+        "technologies": "Angular, Postgres, PrimeNG",
+        "category": "Full-Stack Web"
     },
     {
-        "source": "https://github.com/supersu-man/spotify-playlist-downloader",
-        "link": "https://github.com/supersu-man/spotify-playlist-downloader/releases",
         "title": "Spotify Playlist Downloader",
-        "subtitle": "Name says it all.",
-        "technologies": "Android Studio, Kotlin"
+        "subtitle": "High-speed CLI & Android tool to parse playlists and backup audio locally.",
+        "link": "https://github.com/supersu-man/spotify-playlist-downloader",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android"
     },
     {
         "title": "Spirit Shelf",
-        "subtitle": "Discover amazing cocktails and drink recipes on Spirit Shelf.",
-        "source": "https://github.com/supersu-man/spirit-shelf",
+        "subtitle": "Discover amazing cocktails and drink recipes with an interactive shelf browser.",
         "link": "https://spiritshelf.sumanth.dev",
-        "technologies": "Angular, TypeScript, PrimeNG"
+        "technologies": "Angular, TypeScript, PrimeNG",
+        "category": "Full-Stack Web"
     },
     {
         "title": "Career Desk",
-        "subtitle": "A desktop app to help you search, scrape, and manage job postings from top company career sites.",
-        "source": "https://github.com/supersu-man/career-desk",
-        "link": "https://github.com/supersu-man/career-desk/releases",
-        "technologies": "Angular, Electron, TypeScript, Angular Material"
+        "subtitle": "An open-source desktop workstation that scrapes career portals and organizes job pipelines locally.",
+        "link": "https://github.com/supersu-man/career-desk",
+        "technologies": "Angular, Electron, TypeScript, Angular Material",
+        "category": "Desktop / Electron"
     },
     {
         "title": "Gitamite",
-        "subtitle": "Student app to check timetable, grades, notices and a lot more.",
+        "subtitle": "Campus companion app for students to check timetable, grades, notices, and attendance.",
         "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
-        "technologies": "Android Studio, Kotlin"
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android"
     },
     {
-        "source": "https://github.com/supersu-man/pyt2s",
-        "link": "https://pypi.org/project/pyt2s/",
         "title": "Pyt2s",
-        "subtitle": "The Python Text to Speech library you've been looking for.",
-        "technologies": "Python"
+        "subtitle": "Zero-config Python client for Multiple TTS engines with zero API keys required.",
+        "link": "https://pypi.org/project/pyt2s/",
+        "technologies": "Python",
+        "category": "Open-Source / PyPI"
     },
     {
-        "source": "https://github.com/supersu-man/apkupdater-library",
         "title": "Apk Updater",
-        "subtitle": "Library to check for new app update from GitHub releases.",
-        "technologies": "Android Studio, Kotlin"
+        "subtitle": "Lightweight Android library to automatically check and notify about GitHub releases.",
+        "link": "https://github.com/supersu-man/apkupdater-library",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android"
     },
     {
-        "source": "https://github.com/supersu-man/bumper",
-        "link": "https://github.com/supersu-man/bumper/releases",
         "title": "Bumper",
-        "subtitle": "Bump version-code and version-name of android project",
-        "technologies": "Angular, PrimeNG, TypeScript, Electron"
+        "subtitle": "Developer utility to automate version bumping and build tagging for Android projects.",
+        "link": "https://github.com/supersu-man/bumper",
+        "technologies": "Angular, PrimeNG, TypeScript, Electron",
+        "category": "Desktop / Electron"
     },
     {
         "title": "Byte Browser",
-        "subtitle": "Really simple folder size stats browser.",
-        "source": "https://github.com/supersu-man/byte-browser",
-        "link": "https://github.com/supersu-man/byte-browser/releases",
-        "technologies": "Angular, PrimeNG, TypeScript, Electron"
+        "subtitle": "Cross-platform visual disk space analyzer and directory tree inspector.",
+        "link": "https://github.com/supersu-man/byte-browser",
+        "technologies": "Angular, PrimeNG, TypeScript, Electron",
+        "category": "Desktop / Electron"
     },
     {
         "title": "Electron Typescript Angular",
-        "subtitle": "Really simple ELectron + Typescript + Angular boilerplate.",
-        "source": "https://github.com/supersu-man/electron-typescript-angular",
-        "technologies": "Angular, Electron, TypeScript"
+        "subtitle": "Production-ready desktop starter template combining Electron, TypeScript, and Angular.",
+        "link": "https://github.com/supersu-man/electron-typescript-angular",
+        "technologies": "Angular, Electron, TypeScript",
+        "category": "Desktop / Electron"
     },
     {
         "title": "Kalendar",
-        "subtitle": "Personalized calendar app to help you remember important events.",
-        "source": "https://github.com/supersu-man/kalendar",
+        "subtitle": "Personalized event reminder and schedule planning app with automated notifications.",
         "link": "https://kalendar.sumanth.dev",
-        "technologies": "Angular, PrimeNG, NestJS, Postgres"
+        "technologies": "Angular, PrimeNG, NestJS, Postgres",
+        "category": "Full-Stack Web"
     },
     {
         "title": "Macronium",
-        "subtitle": "Control your PC using Android.",
-        "source": "https://github.com/supersu-man/macronium-android",
+        "subtitle": "Remote control utility to interact with and automate your PC directly from Android.",
         "link": "https://sumanth.dev/macronium",
-        "technologies": "Electron, Android Studio, Kotlin"
+        "technologies": "Electron, Android Studio, Kotlin",
+        "category": "Desktop / Electron"
     },
     {
-        "source": "https://github.com/supersu-man/nerd-clocks",
-        "link": "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
         "title": "Nerd Clocks",
-        "subtitle": "Nerdy clock widget for your Android",
-        "technologies": "Android Studio, Kotlin"
+        "subtitle": "Minimalist, zero-battery-drain geeky clock widgets for Android home screens.",
+        "link": "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android"
     },
     {
         "title": "PaySquareRoot",
-        "subtitle": "Employee app to check leaves, events, punch times and more.",
-        "link": "/paysquareroot",
-        "technologies": "Android Studio, Kotlin, Jetpack Compose"
+        "subtitle": "Internal employee attendance portal to monitor leaves, events, and punch times in real-time.",
+        "link": "https://github.com/supersu-man/PaySquareRoot",
+        "technologies": "Android Studio, Kotlin, Jetpack Compose",
+        "category": "Android"
     },
     {
-        "source": "https://github.com/supersu-man/hymn",
-        "link": "https://github.com/supersu-man/hymn/releases",
         "title": "Hymn",
-        "subtitle": "Stream and download music for free.",
-        "technologies": "Android Studio, Kotlin"
+        "subtitle": "Ad-free native music player to discover, stream, and cache audio seamlessly.",
+        "link": "https://github.com/supersu-man/hymn",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android"
     },
     {
-        "source": "https://github.com/supersu-man/gitam-transit",
-        "link": "https://github.com/supersu-man/gitam-transit/releases",
         "title": "Gitam Transit",
-        "subtitle": "Visualised Gitam bus transport routes.",
-        "technologies": "Android Studio, Kotlin"
+        "subtitle": "Real-time visual route mapping and schedule tracker for Gitam University bus fleets.",
+        "link": "https://github.com/supersu-man/gitam-transit",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android"
     },
     {
-        "source": "https://github.com/supersu-man/sangeet-discordbot",
         "title": "Sangeet - Discord Bot",
-        "subtitle": "Streams music on Discord from Youtube Music.",
-        "technologies": "Typescript, Discord.js, Docker"
+        "subtitle": "Self-hosted Discord audio bot streaming high-fidelity music directly from YouTube Music.",
+        "link": "https://github.com/supersu-man/sangeet-discordbot",
+        "technologies": "TypeScript, Discord.js, Docker",
+        "category": "Open-Source / PyPI"
     },
     {
-        "source": "https://github.com/supersu-man/vainko-discordbot",
         "title": "Vainko - Discord Bot",
-        "subtitle": "Creates temporary voice channels with user limit.",
-        "technologies": "Typescript, Discord.js, Docker"
+        "subtitle": "Dynamic Discord bot managing on-demand temporary voice channels with automated cleanup.",
+        "link": "https://github.com/supersu-man/vainko-discordbot",
+        "technologies": "TypeScript, Discord.js, Docker",
+        "category": "Open-Source / PyPI"
     }
 ]
