@@ -95,9 +95,19 @@
             <div>
               <!-- Top Row: Category Badge + External Link Icon -->
               <div class="flex items-center justify-between gap-2 mb-4">
-                <span class="text-[11px] font-mono uppercase tracking-wider text-[#a8ebc0] bg-[#163622] px-2.5 py-1 rounded-full font-medium">
-                  {{ item.category || 'Software' }}
-                </span>
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="text-[11px] font-mono uppercase tracking-wider text-[#a8ebc0] bg-[#163622] px-2.5 py-1 rounded-full font-medium">
+                    {{ item.category || 'Software' }}
+                  </span>
+
+                  @if (item.archived) {
+                    <span
+                      class="text-[11px] font-mono text-amber-200 bg-amber-400/10 border border-amber-400/20 px-2.5 py-1 rounded-full font-medium"
+                      title="Archived or no longer maintained">
+                      Archived
+                    </span>
+                  }
+                </div>
 
                 @if (item.link) {
                   <a [href]="item.link" target="_blank" rel="noopener noreferrer"

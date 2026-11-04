@@ -10,6 +10,7 @@ export interface Project {
   source?: string;
   technologies: string;
   category?: string;
+  archived?: boolean;
 }
 
 @Component({
