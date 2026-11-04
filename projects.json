@@ -4,188 +4,215 @@
         "subtitle": "Personal portfolio showcasing my projects and work.",
         "link": "https://github.com/supersu-man/supersu-man.github.io",
         "technologies": "Angular, TypeScript, GitHub Pages",
-        "category": "Web"
+        "category": "Web",
+        "archived": false
     },
     {
         "title": "Andha",
         "subtitle": "Turn your phone into a high-contrast digital signboard and scrolling text ticker with customizable colors, text sizes, and animations.",
         "link": "https://github.com/supersu-man/andha",
         "technologies": "Android Studio, Kotlin, Jetpack Compose",
-        "category": "Android"
+        "category": "Android",
+        "archived": false
     },
     {
         "title": "WhySave",
         "subtitle": "Start a WhatsApp conversation with any unsaved number, with quick access to recent call history.",
         "link": "https://github.com/supersu-man/why-save",
         "technologies": "Android Studio, Kotlin",
-        "category": "Android"
+        "category": "Android",
+        "archived": false
     },
     {
         "title": "Pennywise",
         "subtitle": "A local-first personal finance app with zero cloud tracking, instant response times, and zero subscriptions.",
         "link": "https://play.google.com/store/apps/details?id=dev.sumanth.pennywise",
         "technologies": "Android Studio, Kotlin",
-        "category": "Android"
+        "category": "Android",
+        "archived": false
     },
     {
         "title": "Splitmate",
         "subtitle": "Lightweight, shared expense calculator built for road trips and group travels.",
         "link": "https://splitmate.sumanth.dev",
         "technologies": "Angular, Postgres, PrimeNG",
-        "category": "Full-Stack Web"
+        "category": "Full-Stack Web",
+        "archived": false
     },
     {
         "title": "Spotify Playlist Downloader",
         "subtitle": "High-speed CLI & Android tool to parse playlists and backup audio locally.",
         "link": "https://github.com/supersu-man/spotify-playlist-downloader",
         "technologies": "Android Studio, Kotlin",
-        "category": "Android"
+        "category": "Android",
+        "archived": false
     },
     {
         "title": "Spirit Shelf",
         "subtitle": "Discover amazing cocktails and drink recipes with an interactive shelf browser.",
         "link": "https://spiritshelf.sumanth.dev",
         "technologies": "Angular, TypeScript, PrimeNG",
-        "category": "Full-Stack Web"
+        "category": "Full-Stack Web",
+        "archived": false
     },
     {
         "title": "Career Desk",
         "subtitle": "An open-source desktop workstation that scrapes career portals and organizes job pipelines locally.",
         "link": "https://github.com/supersu-man/career-desk",
         "technologies": "Angular, Electron, TypeScript, Angular Material",
-        "category": "Desktop / Electron"
+        "category": "Desktop / Electron",
+        "archived": false
     },
     {
         "title": "CLI Flow",
         "subtitle": "A desktop app for saving and executing your CLI commands with ease.",
         "link": "https://github.com/supersu-man/cli-flow",
         "technologies": "Angular, Electron, TypeScript",
-        "category": "Desktop / Electron"
+        "category": "Desktop / Electron",
+        "archived": false
     },
     {
         "title": "Gitamite",
         "subtitle": "Campus companion app for students to check timetable, grades, notices, and attendance.",
         "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
         "technologies": "Android Studio, Kotlin",
-        "category": "Android"
+        "category": "Android",
+        "archived": false
     },
     {
         "title": "Gitamite Extension",
         "subtitle": "Chrome extension that converts G-Learn timetable course codes into course names.",
         "link": "https://github.com/supersu-man/gitamite-extension",
         "technologies": "JavaScript",
-        "category": "Browser Extension"
+        "category": "Browser Extension",
+        "archived": false
     },
     {
         "title": "Sudoku Solver",
         "subtitle": "Interactive Sudoku solver based on a backtracking algorithm.",
         "link": "https://github.com/supersu-man/sudoku-solver",
         "technologies": "HTML, CSS, JavaScript",
-        "category": "Web"
+        "category": "Web",
+        "archived": false
     },
     {
         "title": "Pyt2s",
         "subtitle": "Zero-config Python client for Multiple TTS engines with zero API keys required.",
         "link": "https://pypi.org/project/pyt2s/",
         "technologies": "Python",
-        "category": "Open-Source / PyPI"
+        "category": "Open-Source / PyPI",
+        "archived": false
     },
     {
         "title": "Zoom Auto Login",
         "subtitle": "Python automation for joining and leaving scheduled Zoom meetings.",
         "link": "https://github.com/supersu-man/ZoomAutoLogin",
         "technologies": "Python",
-        "category": "Automation"
+        "category": "Automation",
+        "archived": false
     },
     {
         "title": "Apk Updater",
         "subtitle": "Lightweight Android library to automatically check and notify about GitHub releases.",
         "link": "https://github.com/supersu-man/apkupdater-library",
         "technologies": "Android Studio, Kotlin",
-        "category": "Android"
+        "category": "Android",
+        "archived": false
     },
     {
         "title": "Bumper",
         "subtitle": "Developer utility to automate version bumping and build tagging for Android projects.",
         "link": "https://github.com/supersu-man/bumper",
         "technologies": "Angular, PrimeNG, TypeScript, Electron",
-        "category": "Desktop / Electron"
+        "category": "Desktop / Electron",
+        "archived": false
     },
     {
         "title": "Byte Browser",
         "subtitle": "Cross-platform visual disk space analyzer and directory tree inspector.",
         "link": "https://github.com/supersu-man/byte-browser",
         "technologies": "Angular, PrimeNG, TypeScript, Electron",
-        "category": "Desktop / Electron"
+        "category": "Desktop / Electron",
+        "archived": false
     },
     {
         "title": "Electron Typescript Angular",
         "subtitle": "Production-ready desktop starter template combining Electron, TypeScript, and Angular.",
         "link": "https://github.com/supersu-man/electron-typescript-angular",
         "technologies": "Angular, Electron, TypeScript",
-        "category": "Desktop / Electron"
+        "category": "Desktop / Electron",
+        "archived": false
     },
     {
         "title": "Kalendar",
         "subtitle": "Personalized event reminder and schedule planning app with automated notifications.",
         "link": "https://kalendar.sumanth.dev",
         "technologies": "Angular, PrimeNG, NestJS, Postgres",
-        "category": "Full-Stack Web"
+        "category": "Full-Stack Web",
+        "archived": false
     },
     {
         "title": "Online Examination System",
         "subtitle": "Web app for online exams with student login, admin-managed questions, and server-recorded answers and marks.",
         "link": "https://github.com/supersu-man/online-examination-system",
         "technologies": "JavaScript, Node.js, MySQL, HTML, CSS",
-        "category": "Full-Stack Web"
+        "category": "Full-Stack Web",
+        "archived": true
     },
     {
         "title": "Macronium",
         "subtitle": "Remote control utility to interact with and automate your PC directly from Android.",
         "link": "https://sumanth.dev/macronium",
         "technologies": "Electron, Android Studio, Kotlin",
-        "category": "Desktop / Electron"
+        "category": "Desktop / Electron",
+        "archived": false
     },
     {
         "title": "Nerd Clocks",
         "subtitle": "Minimalist, zero-battery-drain geeky clock widgets for Android home screens.",
         "link": "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
         "technologies": "Android Studio, Kotlin",
-        "category": "Android"
+        "category": "Android",
+        "archived": false
     },
     {
         "title": "PaySquareRoot",
         "subtitle": "Internal employee attendance portal to monitor leaves, events, and punch times in real-time.",
         "link": "https://github.com/supersu-man/PaySquareRoot",
         "technologies": "Android Studio, Kotlin, Jetpack Compose",
-        "category": "Android"
+        "category": "Android",
+        "archived": true
     },
     {
         "title": "Hymn",
         "subtitle": "Ad-free native music player to discover, stream, and cache audio seamlessly.",
         "link": "https://github.com/supersu-man/hymn",
         "technologies": "Android Studio, Kotlin",
-        "category": "Android"
+        "category": "Android",
+        "archived": false
     },
     {
         "title": "Gitam Transit",
         "subtitle": "Real-time visual route mapping and schedule tracker for Gitam University bus fleets.",
         "link": "https://github.com/supersu-man/gitam-transit",
         "technologies": "Android Studio, Kotlin",
-        "category": "Android"
+        "category": "Android",
+        "archived": true
     },
     {
         "title": "Sangeet - Discord Bot",
         "subtitle": "Self-hosted Discord audio bot streaming high-fidelity music directly from YouTube Music.",
         "link": "https://github.com/supersu-man/sangeet-discordbot",
         "technologies": "TypeScript, Discord.js, Docker",
-        "category": "Open-Source / PyPI"
+        "category": "Open-Source / PyPI",
+        "archived": false
     },
     {
         "title": "Vainko - Discord Bot",
         "subtitle": "Dynamic Discord bot managing on-demand temporary voice channels with automated cleanup.",
         "link": "https://github.com/supersu-man/vainko-discordbot",
         "technologies": "TypeScript, Discord.js, Docker",
-        "category": "Open-Source / PyPI"
+        "category": "Open-Source / PyPI",
+        "archived": false
     }
 ]
