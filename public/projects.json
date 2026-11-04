@@ -1,5 +1,26 @@
 [
     {
+        "title": "Portfolio",
+        "subtitle": "Personal portfolio showcasing my projects and work.",
+        "link": "https://github.com/supersu-man/supersu-man.github.io",
+        "technologies": "Angular, TypeScript, GitHub Pages",
+        "category": "Web"
+    },
+    {
+        "title": "Andha",
+        "subtitle": "Turn your phone into a high-contrast digital signboard and scrolling text ticker with customizable colors, text sizes, and animations.",
+        "link": "https://github.com/supersu-man/andha",
+        "technologies": "Android Studio, Kotlin, Jetpack Compose",
+        "category": "Android"
+    },
+    {
+        "title": "WhySave",
+        "subtitle": "Start a WhatsApp conversation with any unsaved number, with quick access to recent call history.",
+        "link": "https://github.com/supersu-man/why-save",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android"
+    },
+    {
         "title": "Pennywise",
         "subtitle": "A local-first personal finance app with zero cloud tracking, instant response times, and zero subscriptions.",
         "link": "https://play.google.com/store/apps/details?id=dev.sumanth.pennywise",
@@ -35,6 +56,13 @@
         "category": "Desktop / Electron"
     },
     {
+        "title": "CLI Flow",
+        "subtitle": "A desktop app for saving and executing your CLI commands with ease.",
+        "link": "https://github.com/supersu-man/cli-flow",
+        "technologies": "Angular, Electron, TypeScript",
+        "category": "Desktop / Electron"
+    },
+    {
         "title": "Gitamite",
         "subtitle": "Campus companion app for students to check timetable, grades, notices, and attendance.",
         "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
@@ -42,11 +70,32 @@
         "category": "Android"
     },
     {
+        "title": "Gitamite Extension",
+        "subtitle": "Chrome extension that converts G-Learn timetable course codes into course names.",
+        "link": "https://github.com/supersu-man/gitamite-extension",
+        "technologies": "JavaScript",
+        "category": "Browser Extension"
+    },
+    {
+        "title": "Sudoku Solver",
+        "subtitle": "Interactive Sudoku solver based on a backtracking algorithm.",
+        "link": "https://github.com/supersu-man/sudoku-solver",
+        "technologies": "HTML, CSS, JavaScript",
+        "category": "Web"
+    },
+    {
         "title": "Pyt2s",
         "subtitle": "Zero-config Python client for Multiple TTS engines with zero API keys required.",
         "link": "https://pypi.org/project/pyt2s/",
         "technologies": "Python",
         "category": "Open-Source / PyPI"
+    },
+    {
+        "title": "Zoom Auto Login",
+        "subtitle": "Python automation for joining and leaving scheduled Zoom meetings.",
+        "link": "https://github.com/supersu-man/ZoomAutoLogin",
+        "technologies": "Python",
+        "category": "Automation"
     },
     {
         "title": "Apk Updater",
@@ -81,6 +130,13 @@
         "subtitle": "Personalized event reminder and schedule planning app with automated notifications.",
         "link": "https://kalendar.sumanth.dev",
         "technologies": "Angular, PrimeNG, NestJS, Postgres",
+        "category": "Full-Stack Web"
+    },
+    {
+        "title": "Online Examination System",
+        "subtitle": "Web app for online exams with student login, admin-managed questions, and server-recorded answers and marks.",
+        "link": "https://github.com/supersu-man/online-examination-system",
+        "technologies": "JavaScript, Node.js, MySQL, HTML, CSS",
         "category": "Full-Stack Web"
     },
     {
