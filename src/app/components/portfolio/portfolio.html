@@ -315,7 +315,7 @@
       <div class="mt-12 text-center">
         <a routerLink="/projects"
            class="inline-flex items-center gap-2 border border-white/15 hover:border-[#a8ebc0] bg-white/[0.03] hover:bg-[#a8ebc0]/10 text-white hover:text-[#a8ebc0] text-sm md:text-base font-medium px-8 py-4 rounded-full transition-all duration-200 group shadow-lg hover:shadow-[#a8ebc0]/10 hover:scale-[1.02] active:scale-[0.98]">
-          <span>Explore all 19 projects & open-source tools</span>
+          <span>Explore all {{ projects.length }} projects & open-source tools</span>
           <span class="group-hover:translate-x-1 transition-transform">→</span>
         </a>
       </div>
@@ -357,7 +357,7 @@
         <!-- Right: Story & Perspective -->
         <div class="lg:col-span-7 space-y-5">
           <p class="text-xl md:text-2xl font-medium text-white leading-relaxed">
-            I'm an engineer who builds software from first principles. Over the last four years, I've designed and shipped 19+ open-source utilities, native Android apps on Google Play, and developer tools used by thousands of people.
+            I'm an engineer who builds software from first principles. Over the last {{year}} years, I've designed and shipped {{ projects.length }}+ open-source utilities, native Android apps on Google Play, and developer tools used by thousands of people.
           </p>
           <p class="text-neutral-400 text-base md:text-lg leading-relaxed">
             I'm obsessed with clean architecture, offline-first reliability, and minimalist interfaces that don't waste system resources or user attention.

@@ -47,6 +47,8 @@ export class Portfolio implements OnInit {
     technologies: 'Angular, Electron, TypeScript'
   };
 
+  year: number = new Date().getFullYear() - 2019;
+
   ngOnInit(): void {
     this.seo.updateSeo({
       title: 'Sumanth Perambuduri | Full-Stack & Android Engineer',

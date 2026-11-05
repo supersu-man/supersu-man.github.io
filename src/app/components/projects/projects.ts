@@ -21,7 +21,7 @@ export class Projects implements OnInit {
   ngOnInit(): void {
     this.seo.updateSeo({
       title: 'Projects & Open Source | Sumanth Perambuduri',
-      description: 'Explore 19+ open-source tools, Android apps, full-stack web platforms, and desktop utilities built by Sumanth Perambuduri.',
+      description: `Explore ${this.projects.length} open-source tools, Android apps, full-stack web platforms, and desktop utilities built by Sumanth Perambuduri.`,
       ogUrl: 'https://sumanth.dev/projects',
       keywords: 'Projects, Open Source, Sumanth, Sumanth Perambuduri, Android Apps, Kotlin, Angular, Electron, Python, PyPI, GitHub'
     });
@@ -68,4 +68,3 @@ export class Projects implements OnInit {
     return !!url && url.includes('pypi.org');
   }
 }
-
