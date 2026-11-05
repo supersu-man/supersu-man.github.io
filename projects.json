@@ -8,22 +8,6 @@
         "archived": false
     },
     {
-        "title": "Andha",
-        "subtitle": "Turn your phone into a high-contrast digital signboard and scrolling text ticker with customizable colors, text sizes, and animations.",
-        "link": "https://github.com/supersu-man/andha",
-        "technologies": "Android Studio, Kotlin, Jetpack Compose",
-        "category": "Android",
-        "archived": false
-    },
-    {
-        "title": "WhySave",
-        "subtitle": "Start a WhatsApp conversation with any unsaved number, with quick access to recent call history.",
-        "link": "https://github.com/supersu-man/why-save",
-        "technologies": "Android Studio, Kotlin",
-        "category": "Android",
-        "archived": false
-    },
-    {
         "title": "Pennywise",
         "subtitle": "A local-first personal finance app with zero cloud tracking, instant response times, and zero subscriptions.",
         "link": "https://play.google.com/store/apps/details?id=dev.sumanth.pennywise",
@@ -48,14 +32,6 @@
         "archived": false
     },
     {
-        "title": "Spirit Shelf",
-        "subtitle": "Discover amazing cocktails and drink recipes with an interactive shelf browser.",
-        "link": "https://spiritshelf.sumanth.dev",
-        "technologies": "Angular, TypeScript, PrimeNG",
-        "category": "Full-Stack Web",
-        "archived": false
-    },
-    {
         "title": "Career Desk",
         "subtitle": "An open-source desktop workstation that scrapes career portals and organizes job pipelines locally.",
         "link": "https://github.com/supersu-man/career-desk",
@@ -64,35 +40,19 @@
         "archived": false
     },
     {
-        "title": "CLI Flow",
-        "subtitle": "A desktop app for saving and executing your CLI commands with ease.",
-        "link": "https://github.com/supersu-man/cli-flow",
-        "technologies": "Angular, Electron, TypeScript",
-        "category": "Desktop / Electron",
+        "title": "Spirit Shelf",
+        "subtitle": "Discover amazing cocktails and drink recipes with an interactive shelf browser.",
+        "link": "https://spiritshelf.sumanth.dev",
+        "technologies": "Angular, TypeScript, PrimeNG",
+        "category": "Full-Stack Web",
         "archived": false
     },
     {
-        "title": "Gitamite",
-        "subtitle": "Campus companion app for students to check timetable, grades, notices, and attendance.",
-        "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
+        "title": "Nerd Clocks",
+        "subtitle": "Minimalist, zero-battery-drain geeky clock widgets for Android home screens.",
+        "link": "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
         "technologies": "Android Studio, Kotlin",
         "category": "Android",
-        "archived": false
-    },
-    {
-        "title": "Gitamite Extension",
-        "subtitle": "Chrome extension that converts G-Learn timetable course codes into course names.",
-        "link": "https://github.com/supersu-man/gitamite-extension",
-        "technologies": "JavaScript",
-        "category": "Browser Extension",
-        "archived": false
-    },
-    {
-        "title": "Sudoku Solver",
-        "subtitle": "Interactive Sudoku solver based on a backtracking algorithm.",
-        "link": "https://github.com/supersu-man/sudoku-solver",
-        "technologies": "HTML, CSS, JavaScript",
-        "category": "Web",
         "archived": false
     },
     {
@@ -104,11 +64,11 @@
         "archived": false
     },
     {
-        "title": "Zoom Auto Login",
-        "subtitle": "Python automation for joining and leaving scheduled Zoom meetings.",
-        "link": "https://github.com/supersu-man/ZoomAutoLogin",
-        "technologies": "Python",
-        "category": "Automation",
+        "title": "Gitamite",
+        "subtitle": "Campus companion app for students to check timetable, grades, notices, and attendance.",
+        "link": "https://play.google.com/store/apps/details?id=com.supersuman.gitamite",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android",
         "archived": false
     },
     {
@@ -125,6 +85,54 @@
         "link": "https://github.com/supersu-man/bumper",
         "technologies": "Angular, PrimeNG, TypeScript, Electron",
         "category": "Desktop / Electron",
+        "archived": false
+    },
+    {
+        "title": "Zoom Auto Login",
+        "subtitle": "Python automation for joining and leaving scheduled Zoom meetings.",
+        "link": "https://github.com/supersu-man/ZoomAutoLogin",
+        "technologies": "Python",
+        "category": "Automation",
+        "archived": false
+    },
+    {
+        "title": "Andha",
+        "subtitle": "Turn your phone into a high-contrast digital signboard and scrolling text ticker with customizable colors, text sizes, and animations.",
+        "link": "https://github.com/supersu-man/andha",
+        "technologies": "Android Studio, Kotlin, Jetpack Compose",
+        "category": "Android",
+        "archived": false
+    },
+    {
+        "title": "WhySave",
+        "subtitle": "Start a WhatsApp conversation with any unsaved number, with quick access to recent call history.",
+        "link": "https://github.com/supersu-man/why-save",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android",
+        "archived": false
+    },
+    {
+        "title": "CLI Flow",
+        "subtitle": "A desktop app for saving and executing your CLI commands with ease.",
+        "link": "https://github.com/supersu-man/cli-flow",
+        "technologies": "Angular, Electron, TypeScript",
+        "category": "Desktop / Electron",
+        "archived": false
+    },
+    {
+        "title": "Gitamite Extension",
+        "subtitle": "Chrome extension that converts G-Learn timetable course codes into course names.",
+        "link": "https://github.com/supersu-man/gitamite-extension",
+        "technologies": "JavaScript",
+        "category": "Browser Extension",
+        "archived": false
+    },
+    {
+        "title": "Sudoku Solver",
+        "subtitle": "Interactive Sudoku solver based on a backtracking algorithm.",
+        "link": "https://github.com/supersu-man/sudoku-solver",
+        "technologies": "HTML, CSS, JavaScript",
+        "category": "Web",
         "archived": false
     },
     {
@@ -152,14 +160,6 @@
         "archived": false
     },
     {
-        "title": "Online Examination System",
-        "subtitle": "Web app for online exams with student login, admin-managed questions, and server-recorded answers and marks.",
-        "link": "https://github.com/supersu-man/online-examination-system",
-        "technologies": "JavaScript, Node.js, MySQL, HTML, CSS",
-        "category": "Full-Stack Web",
-        "archived": true
-    },
-    {
         "title": "Macronium",
         "subtitle": "Remote control utility to interact with and automate your PC directly from Android.",
         "link": "https://sumanth.dev/macronium",
@@ -168,36 +168,12 @@
         "archived": false
     },
     {
-        "title": "Nerd Clocks",
-        "subtitle": "Minimalist, zero-battery-drain geeky clock widgets for Android home screens.",
-        "link": "https://play.google.com/store/apps/details?id=com.supersuman.nerdclocks",
-        "technologies": "Android Studio, Kotlin",
-        "category": "Android",
-        "archived": false
-    },
-    {
-        "title": "PaySquareRoot",
-        "subtitle": "Internal employee attendance portal to monitor leaves, events, and punch times in real-time.",
-        "link": "https://github.com/supersu-man/PaySquareRoot",
-        "technologies": "Android Studio, Kotlin, Jetpack Compose",
-        "category": "Android",
-        "archived": true
-    },
-    {
         "title": "Hymn",
         "subtitle": "Ad-free native music player to discover, stream, and cache audio seamlessly.",
         "link": "https://github.com/supersu-man/hymn",
         "technologies": "Android Studio, Kotlin",
         "category": "Android",
         "archived": false
-    },
-    {
-        "title": "Gitam Transit",
-        "subtitle": "Real-time visual route mapping and schedule tracker for Gitam University bus fleets.",
-        "link": "https://github.com/supersu-man/gitam-transit",
-        "technologies": "Android Studio, Kotlin",
-        "category": "Android",
-        "archived": true
     },
     {
         "title": "Sangeet - Discord Bot",
@@ -214,5 +190,29 @@
         "technologies": "TypeScript, Discord.js, Docker",
         "category": "Open-Source / PyPI",
         "archived": false
+    },
+    {
+        "title": "Online Examination System",
+        "subtitle": "Web app for online exams with student login, admin-managed questions, and server-recorded answers and marks.",
+        "link": "https://github.com/supersu-man/online-examination-system",
+        "technologies": "JavaScript, Node.js, MySQL, HTML, CSS",
+        "category": "Full-Stack Web",
+        "archived": true
+    },
+    {
+        "title": "PaySquareRoot",
+        "subtitle": "Internal employee attendance portal to monitor leaves, events, and punch times in real-time.",
+        "link": "https://github.com/supersu-man/PaySquareRoot",
+        "technologies": "Android Studio, Kotlin, Jetpack Compose",
+        "category": "Android",
+        "archived": true
+    },
+    {
+        "title": "Gitam Transit",
+        "subtitle": "Real-time visual route mapping and schedule tracker for Gitam University bus fleets.",
+        "link": "https://github.com/supersu-man/gitam-transit",
+        "technologies": "Android Studio, Kotlin",
+        "category": "Android",
+        "archived": true
     }
 ]
