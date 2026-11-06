@@ -1,45 +1,6 @@
 <div class="min-h-screen bg-[#0c0e0d] text-[#e3e7e4] selection:bg-[#a8ebc0] selection:text-[#0c0e0d] font-sans antialiased">
 
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 bg-[#0c0e0d]/85 backdrop-blur-md border-b border-white/[0.05]">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
-      <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-[#a8ebc0] transition-colors flex items-center gap-2">
-        <span>sumanth</span>
-        <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#a8ebc0]"></span>
-      </a>
-
-      <nav class="hidden md:flex items-center gap-6 md:gap-8">
-        <a href="#work" class="text-sm text-neutral-400 hover:text-white transition-colors">Work</a>
-        <a routerLink="/projects" class="text-sm text-neutral-400 hover:text-white transition-colors">Projects</a>
-        <a href="#about" class="text-sm text-neutral-400 hover:text-white transition-colors">About</a>
-        <a routerLink="/cycling" class="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-1">
-          <span>Cycling</span>
-        </a>
-        <a href="#contact" class="text-sm text-neutral-400 hover:text-white transition-colors">Contact</a>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-           class="border border-white/20 hover:border-white hover:bg-white/5 text-white text-xs md:text-sm font-medium px-4 py-1.5 rounded-full transition-all inline-flex items-center gap-1.5">
-          <span>Resume</span>
-          <span class="text-xs">↗</span>
-        </a>
-      </nav>
-
-      <details class="relative md:hidden">
-        <summary aria-label="Open navigation menu" class="list-none cursor-pointer rounded-lg border border-white/15 p-2 text-neutral-300 hover:text-white [&::-webkit-details-marker]:hidden">
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </summary>
-        <nav class="absolute right-0 top-full mt-3 flex w-52 flex-col gap-1 rounded-xl border border-white/10 bg-[#0c0e0d] p-2 shadow-xl">
-          <a href="#work" class="rounded-lg px-3 py-2 text-sm text-neutral-300 hover:bg-white/5 hover:text-white">Work</a>
-          <a routerLink="/projects" class="rounded-lg px-3 py-2 text-sm text-neutral-300 hover:bg-white/5 hover:text-white">Projects</a>
-          <a href="#about" class="rounded-lg px-3 py-2 text-sm text-neutral-300 hover:bg-white/5 hover:text-white">About</a>
-          <a routerLink="/cycling" class="rounded-lg px-3 py-2 text-sm text-neutral-300 hover:bg-white/5 hover:text-white">Cycling</a>
-          <a href="#contact" class="rounded-lg px-3 py-2 text-sm text-neutral-300 hover:bg-white/5 hover:text-white">Contact</a>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="rounded-lg px-3 py-2 text-sm text-neutral-300 hover:bg-white/5 hover:text-white">Resume ↗</a>
-        </nav>
-      </details>
-    </div>
-  </header>
+  <app-header page="portfolio" />
 
   <main class="max-w-7xl mx-auto px-6">
 

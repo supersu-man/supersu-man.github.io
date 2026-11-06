@@ -3,11 +3,12 @@ import { RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import projectsjson from '../../../../public/projects.json';
 import { SeoService } from '../../services/seo.service';
+import { Header } from '../../components/header/header';
 import { Project } from '../portfolio/portfolio';
 
 @Component({
   selector: 'app-projects',
-  imports: [RouterLink, FormsModule],
+  imports: [RouterLink, FormsModule, Header],
   templateUrl: './projects.html',
 })
 export class Projects implements OnInit {

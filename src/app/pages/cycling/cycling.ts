@@ -1,11 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import tripsJson from '../../../../public/cycling/cycling.json';
-import { RouterLink } from '@angular/router';
 import { SeoService } from '../../services/seo.service';
+import { Header } from '../../components/header/header';
 
 @Component({
   selector: 'app-cycling',
-  imports: [RouterLink],
+  imports: [Header],
   templateUrl: './cycling.html',
 })
 export class Cycling implements OnInit {
